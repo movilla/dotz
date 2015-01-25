@@ -117,6 +117,7 @@ function myFunction1() {
 
 </script>
   <section id="cartas" class="bajara">
+     <img id="carta" class="carta" src="style/img/es/evento/DOTZ_Dorso_eventos.png" alt="primera"/>
   </section>
   <section id="adelante" class="boton">
     <button id="b01a" class="b_play"><img src="style/icons/play.png" class="play" alt="Play"/></button>

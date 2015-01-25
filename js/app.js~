@@ -64,5 +64,5 @@ document.getElementById("demo_7").innerHTML = azul_8;
         var nav = document.getElementById('cartas');
         if (nav) { nav.innerHTML = '<img id="carta" class="carta" src="style/img/es/evento/DOTZ_Dorso_eventos.png" alt="dorso"><img id="carta" class="carta" src="style/img/es/evento/'+azul_1d+'.png" alt="dorso" style="visibility: hidden;"><img id="carta" class="carta" src="style/img/es/evento/'+azul_2d+'.png" alt="dorso" style="visibility: hidden;">'; }
 
-        document.querySelector('#b01a').onclick = function () { Document.getElementsByClassName('carta')[1].style.visibility = ''; };
+        document.querySelector('#b01a').onclick = function () { Document.getElementsByClassName('carta').style.visibility = ''; };
 }
