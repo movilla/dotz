@@ -11,15 +11,6 @@ function myFunction() {
         var azul_7 = yourArray[6]
         var azul_8 = yourArray[7]
 
-document.getElementById("azul_demo").innerHTML = yourArray[0];
-document.getElementById("azul_1").innerHTML = yourArray[1];
-document.getElementById("azul_2").innerHTML = yourArray[2];
-document.getElementById("azul_3").innerHTML = yourArray[3];
-document.getElementById("azul_4").innerHTML = yourArray[4];
-document.getElementById("azul_5").innerHTML = yourArray[5];
-document.getElementById("azul_6").innerHTML = yourArray[6];
-document.getElementById("azul_7").innerHTML = yourArray[7];
-
         yourArray2 = ['9', '10', '11', '12', '13', '14', '15', azul_7, azul_8]
         yourArray2.sort(function() { return 0.5 - Math.random() });
         var verde_1 = yourArray2[0]
@@ -32,16 +23,7 @@ document.getElementById("azul_7").innerHTML = yourArray[7];
         var verde_8 = yourArray2[7]
         var verde_9 = yourArray2[8]
 
-document.getElementById("verde_demo").innerHTML = yourArray2[0];
-document.getElementById("verde_1").innerHTML = yourArray2[1];
-document.getElementById("verde_2").innerHTML = yourArray2[2];
-document.getElementById("verde_3").innerHTML = yourArray2[3];
-document.getElementById("verde_4").innerHTML = yourArray2[4];
-document.getElementById("verde_5").innerHTML = yourArray2[5];
-document.getElementById("verde_6").innerHTML = yourArray2[6];
-document.getElementById("verde_7").innerHTML = yourArray2[7];
-
-        yourArray3 = [ verde_1, verde_2, verde_3, '23', verde_4, verde_5, verde_6, '24']
+        yourArray3 = [verde_1, verde_2, verde_3, '23', verde_4, verde_5, verde_6, '24']
         yourArray3.sort(function() { return 0.5 - Math.random() });
         var verde_1d = yourArray3[0]
         var verde_2d = yourArray3[1]
@@ -51,15 +33,6 @@ document.getElementById("verde_7").innerHTML = yourArray2[7];
         var verde_6d = yourArray3[5]
         var verde_7d = yourArray3[6]
         var verde_8d = yourArray3[7]
-
-document.getElementById("verde_demod").innerHTML = yourArray3[0];
-document.getElementById("verde_1d").innerHTML = yourArray3[1];
-document.getElementById("verde_2d").innerHTML = yourArray3[2];
-document.getElementById("verde_3d").innerHTML = yourArray3[3];
-document.getElementById("verde_4d").innerHTML = yourArray3[4];
-document.getElementById("verde_5d").innerHTML = yourArray3[5];
-document.getElementById("verde_6d").innerHTML = yourArray3[6];
-document.getElementById("verde_7d").innerHTML = yourArray3[7];
 
         yourArray4 = [ '26', '27', '28', '29', '30', '31', '32', '33', '34', '35', '36', '37', '38', '39', '40', '41', '42', '43', '44', '45']
         yourArray4.sort(function() { return 0.5 - Math.random() });
@@ -73,17 +46,6 @@ document.getElementById("verde_7d").innerHTML = yourArray3[7];
         var amarilla_8 = yourArray4[7]
         var amarilla_9 = yourArray4[8]
         var amarilla_10 = yourArray4[9]
-
-document.getElementById("amarilla_demo").innerHTML = yourArray4[0];
-document.getElementById("amarilla_1").innerHTML = yourArray4[1];
-document.getElementById("amarilla_2").innerHTML = yourArray4[2];
-document.getElementById("amarilla_3").innerHTML = yourArray4[3];
-document.getElementById("amarilla_4").innerHTML = yourArray4[4];
-document.getElementById("amarilla_5").innerHTML = yourArray4[5];
-document.getElementById("amarilla_6").innerHTML = yourArray4[6];
-document.getElementById("amarilla_7").innerHTML = yourArray4[7];
-document.getElementById("amarilla_8").innerHTML = yourArray4[8];
-document.getElementById("amarilla_9").innerHTML = yourArray4[9];
 
         yourArray5 = [ amarilla_1, amarilla_2, amarilla_3, verde_7, amarilla_4, amarilla_5, verde_8, amarilla_6, amarilla_7, amarilla_8, amarilla_9, amarilla_10, verde_9]
         yourArray5.sort(function() { return 0.5 - Math.random() });
@@ -101,21 +63,7 @@ document.getElementById("amarilla_9").innerHTML = yourArray4[9];
         var amarilla_12p = yourArray5[11]
         var amarilla_13p = yourArray5[12]
 
-document.getElementById("amarilla_demop").innerHTML = yourArray5[0];
-document.getElementById("amarilla_1p").innerHTML = yourArray5[1];
-document.getElementById("amarilla_2p").innerHTML = yourArray5[2];
-document.getElementById("amarilla_3p").innerHTML = yourArray5[3];
-document.getElementById("amarilla_4p").innerHTML = yourArray5[4];
-document.getElementById("amarilla_5p").innerHTML = yourArray5[5];
-document.getElementById("amarilla_6p").innerHTML = yourArray5[6];
-document.getElementById("amarilla_7p").innerHTML = yourArray5[7];
-document.getElementById("amarilla_8p").innerHTML = yourArray5[8];
-document.getElementById("amarilla_9p").innerHTML = yourArray5[9];
-document.getElementById("amarilla_10p").innerHTML = yourArray5[10];
-document.getElementById("amarilla_11p").innerHTML = yourArray5[11];
-document.getElementById("amarilla_12p").innerHTML = yourArray5[12];
-
-        yourArray6 = [ amarilla_1p, amarilla_2p, amarilla_3p, amarilla_4p, amarilla_5p, '46', amarilla_6p, amarilla_7p, amarilla_8p, amarilla_9p, amarilla_10p, '50']
+        yourArray6 = [amarilla_1p, amarilla_2p, amarilla_3p, amarilla_4p, amarilla_5p, '46', amarilla_6p, amarilla_7p, amarilla_8p, amarilla_9p, amarilla_10p, '50']
         yourArray6.sort(function() { return 0.5 - Math.random() });
         var amarilla_1d = yourArray6[0]
         var amarilla_2d = yourArray6[1]
@@ -130,18 +78,35 @@ document.getElementById("amarilla_12p").innerHTML = yourArray5[12];
         var amarilla_11d = yourArray6[10]
         var amarilla_12d = yourArray6[11]
 
-document.getElementById("amarilla_demod").innerHTML = yourArray6[0];
-document.getElementById("amarilla_1d").innerHTML = yourArray6[1];
-document.getElementById("amarilla_2d").innerHTML = yourArray6[2];
-document.getElementById("amarilla_3d").innerHTML = yourArray6[3];
-document.getElementById("amarilla_4d").innerHTML = yourArray6[4];
-document.getElementById("amarilla_5d").innerHTML = yourArray6[5];
-document.getElementById("amarilla_6d").innerHTML = yourArray6[6];
-document.getElementById("amarilla_7d").innerHTML = yourArray6[7];
-document.getElementById("amarilla_8d").innerHTML = yourArray6[8];
-document.getElementById("amarilla_9d").innerHTML = yourArray6[9];
-document.getElementById("amarilla_10d").innerHTML = yourArray6[10];
-document.getElementById("amarilla_11d").innerHTML = yourArray6[11];
+        yourArray7 = [ '51', '52', '53', '54', '55', '56']
+        yourArray7.sort(function() { return 0.5 - Math.random() });
+        var naraja_1p = yourArray7[0]
+        var naranja_2p = yourArray7[1]
+        var naranja_3p = yourArray7[2]
+
+        yourArray8 = [naraja_1p, amarilla_11p, naranja_2p, amarilla_12p, naranja_3p, amarilla_13p]
+        yourArray8.sort(function() { return 0.5 - Math.random() });
+        var naranja_1pp = yourArray8[0]
+        var naranja_2pp = yourArray8[1]
+        var naranja_3pp = yourArray8[2]
+        var naranja_4pp = yourArray8[3]
+        var naranja_5pp = yourArray8[4]
+        var naranja_6pp = yourArray8[5]
+
+        yourArray9 = [naranja_1pp, '57', naranja_2pp, '58', naranja_3pp, '59']
+        yourArray9.sort(function() { return 0.5 - Math.random() });
+        var naranja_1d = yourArray9[0]
+        var naranja_2d = yourArray9[1]
+        var naranja_3d = yourArray9[2]
+        var naranja_4d = yourArray9[3]
+        var naranja_5d = yourArray9[4]
+        var naranja_6d = yourArray9[5]
+
+        yourArray10 = [naranja_4pp, naranja_5pp, naranja_6pp]
+        yourArray10.sort(function() { return 0.5 - Math.random() });
+        var fin_1d = yourArray10[0]
+        var fin_2d = yourArray10[1]
+        var fin_3d = yourArray10[2]
 
          
         var juego_corto = new Array();
@@ -168,31 +133,15 @@ document.getElementById("amarilla_11d").innerHTML = yourArray6[11];
         juego_corto[20] = 'style/img/es/evento/'+amarilla_10d+'.png';
         juego_corto[21] = 'style/img/es/evento/'+amarilla_11d+'.png';
         juego_corto[22] = 'style/img/es/evento/'+amarilla_12d+'.png';
-
-
-document.getElementById("demo").innerHTML = juego_corto[0];
-document.getElementById("1").innerHTML = juego_corto[1];
-document.getElementById("2").innerHTML = juego_corto[2];
-document.getElementById("3").innerHTML = juego_corto[3];
-document.getElementById("4").innerHTML = juego_corto[4];
-document.getElementById("5").innerHTML = juego_corto[5];
-document.getElementById("6").innerHTML = juego_corto[6];
-document.getElementById("7").innerHTML = juego_corto[7];
-document.getElementById("8").innerHTML = juego_corto[8];
-document.getElementById("9").innerHTML = juego_corto[9];
-document.getElementById("10").innerHTML = juego_corto[10];
-document.getElementById("11").innerHTML = juego_corto[11];
-document.getElementById("12").innerHTML = juego_corto[12];
-document.getElementById("13").innerHTML = juego_corto[13];
-document.getElementById("14").innerHTML = juego_corto[14];
-document.getElementById("15").innerHTML = juego_corto[15];
-document.getElementById("16").innerHTML = juego_corto[16];
-document.getElementById("17").innerHTML = juego_corto[17];
-document.getElementById("18").innerHTML = juego_corto[18];
-document.getElementById("19").innerHTML = juego_corto[19];
-document.getElementById("20").innerHTML = juego_corto[20];
-document.getElementById("21").innerHTML = juego_corto[21];
-document.getElementById("22").innerHTML = juego_corto[22];
+        juego_corto[23] = 'style/img/es/evento/'+naranja_1d+'.png';
+        juego_corto[24] = 'style/img/es/evento/'+naranja_2d+'.png';
+        juego_corto[25] = 'style/img/es/evento/'+naranja_3d+'.png';
+        juego_corto[26] = 'style/img/es/evento/'+naranja_4d+'.png';
+        juego_corto[27] = 'style/img/es/evento/'+naranja_5d+'.png';
+        juego_corto[28] = 'style/img/es/evento/'+naranja_6d+'.png';
+        juego_corto[29] = 'style/img/es/evento/'+fin_1d+'.png';
+        juego_corto[30] = 'style/img/es/evento/'+fin_2d+'.png';
+        juego_corto[31] = 'style/img/es/evento/'+fin_3d+'.png';
 
 
 
