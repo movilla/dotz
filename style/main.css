@@ -1,0 +1,25 @@
+.siguiente {
+  position: fixed;
+  bottom: 5%;
+  right: 10%;
+  font-size: 27pt;
+}
+
+.anterior {
+  position: fixed;
+  bottom: 5%;
+  left: 10%;
+  font-size: 27pt;
+}
+
+.carta {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.empezar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

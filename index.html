@@ -5,15 +5,16 @@
   <title>DOTZ</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <script type="text/javascript" src="./js/app.js"></script>
+  <link rel="stylesheet" type="text/css" href="style/main.css">
 </head>
 <body>
-<button style="margin-left: 45%;" onclick="myFunction()">Empezar juego Corto</button>
+<button class="empezar" onclick="myFunction()">Empezar juego Corto</button>
 
-  <section style="margin-left: 36%; margin-right: 50%;" id="cartas" class="bajara">
+  <section id="cartas" class="baraja">
   </section>
 
   <section>
-        <a style="position: absolute; bottom: 5%; left: 40%; background-color: grey;" id="atras"> anterior </a> <a style="position: absolute; bottom: 5%; left: 60%; background-color: grey;" id="alante"> siguiente </a>
+        <a class="anterior" id="atras"> ← </a> <a class="siguiente" id="alante"> → </a>
   </section>
 </body>
 </html>
