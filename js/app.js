@@ -1,5 +1,5 @@
-
-function myFunction() {
+document.querySelector( "#mazo" ).onclick = function () 
+        {
         yourArray = ['1', '2', '3', '4', '5', '6', '7', '8']
         yourArray.sort(function() { return 0.5 - Math.random() });
         var azul_1d = yourArray[0]
@@ -212,7 +212,4 @@ function myFunction() {
         if (document.getElementById('cartas').src="style/img/es/evento/DOTZ_Dorso_eventos.png") {
                 document.getElementById('atras').style.visibility = 'hidden';
                 }
-
-
-        document.querySelector('#b01a').onclick = function () { Document.getElementsByClassName('carta')[1].style.visibility = ''; };
-}
+};

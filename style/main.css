@@ -1,25 +1,38 @@
+.flechas {
+}
+
 .siguiente {
   position: fixed;
-  bottom: 5%;
-  right: 10%;
-  font-size: 27pt;
+  right: 5%;
+  bottom: 10%;
 }
 
 .anterior {
+  left: 5%;
   position: fixed;
-  bottom: 5%;
-  left: 10%;
-  font-size: 27pt;
+  bottom: 10%;
 }
 
 .carta {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  max-width: 70%;
+  max-height: 70%;
 }
 
 .empezar {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.flecha {
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
 }
