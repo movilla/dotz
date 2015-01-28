@@ -172,8 +172,14 @@ document.querySelector( "#mazo" ).onclick = function ()
                 // eltexto.innerHTML = texto[cualvemos];
                 document.getElementById('atras').style.visibility = '';
                 if (cualvemos == (juego_corto.length -1)) {
-                document.getElementById('alante').style.visibility = 'hidden';
+                        document.getElementById('alante').style.visibility = 'hidden';
                 }
+                // pal doctor marteuse
+                if ((juego_corto[cualvemos]) == ('style/img/es/evento/46.png')) {
+                        var free_marteuse = document.getElementById('marteuse');
+                               free_marteuse.innerHTML = '<a class="marteuse"><img class="active" src="style/img/marteuse_active.png"></a>'
+                }
+                
 
         }
 
