@@ -177,9 +177,12 @@ document.querySelector( "#mazo" ).onclick = function ()
                 // pal doctor marteuse
                 if ((juego_corto[cualvemos]) == ('style/img/es/evento/46.png')) {
                         var free_marteuse = document.getElementById('marteuse');
-                               free_marteuse.innerHTML = '<a class="marteuse"><img class="active" src="style/img/marteuse_active.png"></a>'
+                               free_marteuse.innerHTML = '<a class="marteuse" id="doc"><img class="active" src="style/img/marteuse_active.png"></a>'
                 }
-                
+                else {
+                var doc = document.getElementById('doc');
+                        if (doc) { doc.style.visibility = 'hidden'; }
+                }
 
         }
 
