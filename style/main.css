@@ -1,3 +1,13 @@
+@font-face {
+  font-family:'Disintegration';
+  src: url('./fonts/DISINTEG.TTF');
+  font-weight: 100;
+}
+
+* {
+  font-family: Disintegration, Open Sans, sans-serif;
+}
+
 #fondo {
   position:fixed;
   background: url("img/dotz_maptim_sidea.jpg") no-repeat center center fixed;
@@ -6,6 +16,11 @@
   height:100%;
   top: 0rem;
   left: 0rem;
+  z-index: -2;
+}
+
+#portada {
+  position: fixed;
   z-index: -1;
 }
 
@@ -28,12 +43,16 @@
   max-width: 80%;
   max-height: 80%;
   box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
+  z-index: 1;
 }
 
 .empezar {
-  display: block;
+  position: relative;
   margin-left: auto;
   margin-right: auto;
+  font-size: 7em;
+  display: table;
+  margin-top: 2%;
 }
 
 .flecha {
@@ -53,7 +72,6 @@
   left: 5%;
   animation: parpadeo 5s;
   animation-iteration-count: infinite;
-}
   @keyframes parpadeo {	
         0%	{opacity: 1;}
 	50%	{opacity: 0;}
