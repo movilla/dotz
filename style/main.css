@@ -1,6 +1,7 @@
 #fondo {
   position:fixed;
-  background-image: url("img/dotz_maptim_sidea.jpg");
+  background: url("img/dotz_maptim_sidea.jpg") no-repeat center center fixed;
+  background-size: cover;
   width:100%;
   height:100%;
   top: 0rem;
@@ -50,4 +51,12 @@
   position: fixed;
   top: 50%;
   left: 5%;
+  animation: parpadeo 5s;
+  animation-iteration-count: infinite;
+}
+  @keyframes parpadeo {	
+        0%	{opacity: 1;}
+	50%	{opacity: 0;}
+	100%    {opacity: 1;}	
+	}
 }
