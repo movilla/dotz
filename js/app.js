@@ -158,26 +158,36 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         juego_corto[30] = 'style/img/es/evento/'+fin_2d+'.jpg';
         juego_corto[31] = 'style/img/es/evento/'+fin_3d+'.jpg';
 
-
-
         var viendo = 0;
         document.querySelector('#alante').onclick = function moviendo(sentido) {
                 var imagen_actual = document.getElementById("carta_en_juego");
-                var ultima = juego_corto.length - 1;  
+                var ultima = juego_corto.length - 1;
+                var eldata = document.getElementById('marteuse_fijo');
+                if (eldata) {
+                        var data_marteuse = eldata.getAttribute('data-marteuse');
+                        if ((data_marteuse) == (viendo)) {
+                        imagen_actual.src = 'style/img/es/evento/46.jpg';
+                        alert('Aparece el Doctor Marteruse');
+                        eldata.setAttribute('data-marteuse', '');
+                        var doc = document.getElementById('doc');
+                        if (doc) {doc.style.visibility = 'visible'; }
+                        var fijo_doc = document.getElementById('marteuse_fijo');
+                        if (fijo_doc) {fijo_doc.style.visibility = 'hidden'; }
+                        return false;
+                        }
+                }
                 var sentido = 1;
                 var auxiliar = viendo + sentido;
                 if(auxiliar < 0) { auxiliar = ultima; }
                 if(auxiliar > ultima) { auxiliar = 0; }
                 viendo = auxiliar;
                 imagen_actual.src = juego_corto[viendo];
-
-                // ponemos el texto en la etiqueta SPAN
-                // eltexto.innerHTML = texto[viendo];
+                var acto = document.getElementById('acto');
+                acto.innerHTML = '<a class="num_carta">'+viendo+'/'+ultima+'</a>'
                 document.getElementById('atras').style.visibility = '';
                 if (viendo == (juego_corto.length -1)) {
                         document.getElementById('alante').style.visibility = 'hidden';
                 }
-                // pal doctor marteuse
                 if ((juego_corto[viendo]) == ('style/img/es/evento/46.jpg')) {
                         var free_marteuse = document.getElementById('marteuse');
                                free_marteuse.innerHTML = '<a class="marteuse" id="doc"><img class="active" src="style/img/marteuse_active.png"></a>'
@@ -190,31 +200,27 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         }
 
         document.querySelector('#atras').onclick = function moviendo(sentido) {
-                // accedemos al objeto que contiene la imagen
                 var imagen_actual = document.getElementById("carta_en_juego");
-                // accedemos al objeto que contiene el texto
-                // ¿cuál es el indice de la última imágenes en nuestra array?
-                var ultima = juego_corto.length - 1; // en el ejemplo, será el 4
-                
+                var ultima = juego_corto.length - 1; 
                 var sentido = -1;
-                // antes de cambiar los datos, en un auxilar, verificamos cuál sería la imagen a mostrar
-                var auxiliar = viendo + sentido; // se sumará 1 o se restará 1 al índice
-                // si el resultado es menor que cero, le decimos que vaya al otro extremo y muestre la ultima
+                var auxiliar = viendo + sentido;
                 if(auxiliar < 0) { auxiliar = ultima; }
-                // si el resultado es mayor que la última, le decimos que vaya al otro extremo y muestre la primera
                 if(auxiliar > ultima) { auxiliar = 0; }
-  
-                // listo, ahora ya podemos cambiar el dato sin problemas
                 viendo = auxiliar;
-  
-                // ponemos la dirección URL de la imagen en la etiqueta IMG
                 imagen_actual.src = juego_corto[viendo];
-
-                // ponemos el texto en la etiqueta SPAN
-                // eltexto.innerHTML = texto[viendo];
+                var acto = document.getElementById('acto');
+                acto.innerHTML = '<a class="num_carta">'+viendo+'/'+ultima+'</a>'
                 document.getElementById('alante').style.visibility = '';
                 if (viendo == (juego_corto.length - juego_corto.length)) {
                 document.getElementById('atras').style.visibility = 'hidden';
+                }
+                if ((juego_corto[viendo]) == ('style/img/es/evento/46.jpg')) {
+                        var free_marteuse = document.getElementById('marteuse');
+                               free_marteuse.innerHTML = '<a class="marteuse" id="doc"><img class="active" src="style/img/marteuse_active.png"></a>'
+                }
+                else {
+                var doc = document.getElementById('doc');
+                        if (doc) { doc.style.visibility = 'hidden'; }
                 }
         }
 
@@ -223,5 +229,23 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         if (nav) { nav.innerHTML = '<img id="carta_en_juego" class="carta" src="style/img/es/evento/DOTZ_Dorso_eventos.jpg">'; }
         if (document.getElementById('cartas').src="style/img/es/evento/DOTZ_Dorso_eventos.jpg") {
                 document.getElementById('atras').style.visibility = 'hidden';
+                }
+
+        document.querySelector('#marteuse').onclick = function (){
+        var doctor = confirm('¿Colocar estar carta en el medio del Mazo de Robo?');
+                if (doctor == true) { alert('Hecho');
+                var carta_marteruse = viendo;
+                alert(carta_marteruse);
+                var cuantas_quedan = (juego_corto.length - 1) - viendo;
+                alert(cuantas_quedan);
+                var marteuse_mitad = cuantas_quedan / 2; 
+                marteuse_mitad = Math.floor(marteuse_mitad); 
+                alert(marteuse_mitad);
+                var nueva_posicion = viendo + marteuse_mitad;
+                alert(nueva_posicion);
+                var fijo_marteuse = document.getElementById('doc_marteuse');
+                fijo_marteuse.innerHTML = '<a class="esperando" data-marteuse="'+nueva_posicion+'" id="marteuse_fijo"><img class="active" src="style/img/marteuse_active.png"></a>'  
+                }
+                else { alert('Todo sigue igual');}
                 }
 };

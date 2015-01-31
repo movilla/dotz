@@ -50,10 +50,11 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  font-size: 6em;
+  font-size: 5em;
   display: table;
   margin-top: 2%;
-  text-align: center;  
+  text-align: center;
+  padding: 0; 
 }
 
 .flecha {
@@ -69,13 +70,27 @@
 
 .marteuse {
   position: fixed;
-  top: 50%;
-  left: 5%;
-  animation: parpadeo 5s;
+  top: 1%;
+  right: 1%;
+  animation: parpadeo 2s;
   animation-iteration-count: infinite;
 }
   @keyframes parpadeo {	
         0%	{opacity: 1;}
-	50%	{opacity: 0;}
+	50%	{opacity: 0.2;}
 	100%    {opacity: 1;}
+}
+
+.esperando {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+}
+
+.num_carta {
+  position: fixed;
+  top: 1%;
+  left: 1%;
+  font-size: 2em;
+  color: white;
 }
