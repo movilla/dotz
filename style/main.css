@@ -50,9 +50,10 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  font-size: 7em;
+  font-size: 6em;
   display: table;
   margin-top: 2%;
+  text-align: center;  
 }
 
 .flecha {
@@ -72,9 +73,9 @@
   left: 5%;
   animation: parpadeo 5s;
   animation-iteration-count: infinite;
+}
   @keyframes parpadeo {	
         0%	{opacity: 1;}
 	50%	{opacity: 0;}
-	100%    {opacity: 1;}	
-	}
+	100%    {opacity: 1;}
 }

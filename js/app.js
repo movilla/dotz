@@ -12,9 +12,9 @@ for (var i = input.length-1; i >=0; i--) {
 return input;
 }
 
-document.querySelector( "#mazo" ).onclick = function () {
+document.querySelector( "#mazo_corto" ).onclick = function () {
         var elect = document.getElementById('eleccion');
-        if (elect) { elect.style.visibility = 'hidden'; }
+        if (elect) { elect.style.display = 'none'; }
         bloque1 = ['1', '2', '3', '4', '5', '6', '7', '8']
         bloque1.shuffle();
         var azul_1d = bloque1[0]
