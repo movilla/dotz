@@ -235,14 +235,10 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         var doctor = confirm('¿Colocar estar carta en el medio del Mazo de Robo?');
                 if (doctor == true) { alert('Hecho');
                 var carta_marteruse = viendo;
-                alert(carta_marteruse);
                 var cuantas_quedan = (juego_corto.length - 1) - viendo;
-                alert(cuantas_quedan);
                 var marteuse_mitad = cuantas_quedan / 2; 
                 marteuse_mitad = Math.floor(marteuse_mitad); 
-                alert(marteuse_mitad);
                 var nueva_posicion = viendo + marteuse_mitad;
-                alert(nueva_posicion);
                 var fijo_marteuse = document.getElementById('doc_marteuse');
                 fijo_marteuse.innerHTML = '<a class="esperando" data-marteuse="'+nueva_posicion+'" id="marteuse_fijo"><img class="active" src="style/img/marteuse_active.png"></a>'  
                 }
