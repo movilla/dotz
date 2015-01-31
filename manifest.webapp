@@ -1,0 +1,16 @@
+{
+  "name": "Ayuda DOTZ",
+  "description": "Aplicación complementaria al juego de mesa Dawn of the Zeds",
+  "version": "0.0.1",
+  "launch_path": "/index.html",
+  "icons": {
+    "60": "/style/img/icono_60.png",
+    "90": "/style/img/icono_90.png",
+    "128": "/style/img/icono_128.png"
+  },
+  "developer": {
+    "name": "movilla",
+    "url": "https://github.com/movilla"
+  },
+  "default_locale": "es"
+}

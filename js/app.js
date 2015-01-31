@@ -176,6 +176,25 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                         return false;
                         }
                 }
+                var laguardiadata = document.getElementById('guardia_mas5');
+                if (laguardiadata) {
+                        var data_guardia = laguardiadata.getAttribute('data-guardia');
+                        if ((data_guardia) == (viendo)) {
+                        imagen_actual.src = 'style/img/es/evento/59.jpg';
+                        alert('Fin del juego');
+                        return false;
+                                if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length - 2)))  {
+                                alert('Juega la siguiente carta y después llega la Guardia Nacional')
+                                }
+                        }
+                }
+                var ultimaguardiadata = document.getElementById('guardia_mas8');
+                if (ultimaguardiadata) {
+                        var data_guardia = ultimaguardiadata.getAttribute('data-guardia');
+                                if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length - 2)))  {
+                                alert('Juega la siguiente carta y después llega la Guardia Nacional')
+                                }
+                }
                 var sentido = 1;
                 var auxiliar = viendo + sentido;
                 if(auxiliar < 0) { auxiliar = ultima; }
@@ -190,13 +209,26 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 }
                 if ((juego_corto[viendo]) == ('style/img/es/evento/46.jpg')) {
                         var free_marteuse = document.getElementById('marteuse');
-                               free_marteuse.innerHTML = '<a class="marteuse" id="doc"><img class="active" src="style/img/marteuse_active.png"></a>'
+                        free_marteuse.innerHTML = '<a class="marteuse" id="doc"><img class="active" src="style/img/marteuse_active.png"></a>'
                 }
                 else {
                 var doc = document.getElementById('doc');
                         if (doc) { doc.style.visibility = 'hidden'; }
                 }
-
+                if ((juego_corto[viendo]) == ('style/img/es/evento/59.jpg')) {
+                        var guardia_5 = document.getElementById('cinco');
+                        guardia_5.style.visibility = 'visible'; 
+                        guardia_5.innerHTML ='<a class="mas_cinco" id="guardia_mas_cinco">5+</a>'
+                        var guardia_8 = document.getElementById('ocho');
+                        guardia_8.style.visibility = 'visible'; 
+                        guardia_8.innerHTML ='<a class="mas_ocho" id="guardia_mas_ocho">8+</a>'
+                }
+                else {
+                      var guardia_5 = document.getElementById('cinco');
+                      if (guardia_5) { guardia_5.style.visibility = 'hidden'; } 
+                      var guardia_8 = document.getElementById('ocho');
+                      if (guardia_8) { guardia_8.style.visibility = 'hidden'; }  
+                }
         }
 
         document.querySelector('#atras').onclick = function moviendo(sentido) {
@@ -222,6 +254,20 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 var doc = document.getElementById('doc');
                         if (doc) { doc.style.visibility = 'hidden'; }
                 }
+                if ((juego_corto[viendo]) == ('style/img/es/evento/59.jpg')) {
+                        var guardia_5 = document.getElementById('cinco');
+                        guardia_5.style.visibility = 'visible'; 
+                        guardia_5.innerHTML ='<a class="mas_cinco" id="guardia_mas_cinco">5+</a>'
+                        var guardia_8 = document.getElementById('ocho');
+                        guardia_8.style.visibility = 'visible'; 
+                        guardia_8.innerHTML ='<a class="mas_ocho" id="guardia_mas_ocho">8+</a>'
+                }
+                else {
+                      var guardia_5 = document.getElementById('cinco');
+                      if (guardia_5) { guardia_5.style.visibility = 'hidden'; } 
+                      var guardia_8 = document.getElementById('ocho');
+                      if (guardia_8) { guardia_8.style.visibility = 'hidden'; }  
+                }
         }
 
 
@@ -243,5 +289,40 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 fijo_marteuse.innerHTML = '<a class="esperando" data-marteuse="'+nueva_posicion+'" id="marteuse_fijo"><img class="active" src="style/img/marteuse_active.png"></a>'  
                 }
                 else { alert('Todo sigue igual');}
+        }
+
+        document.querySelector('#cinco').onclick = function (){
+        var cinco = confirm('¿Resultado de 5 a 7?');
+                if (cinco == true) { alert('Hecho, sigue jugando');
+                var guardia_actura = viendo;
+                var cuantas_faltan = (juego_corto.length - 1) - viendo;
+                var colocacion = Math.floor((Math.random() * cuantas_faltan) + 1);
+                var nueva_59 = viendo + colocacion;
+                var fijo_59 = document.getElementById('guardia_cinco');
+                fijo_59.innerHTML = '<a class="mas_cinco" data-guardia="'+nueva_59+'" id="guardia_mas5">5+</a>'
+                var guardia_5 = document.getElementById('cinco');
+                guardia_5.style.visibility = 'hidden'; 
                 }
+                else {
+                }
+        }
+        document.querySelector('#ocho').onclick = function (){
+        var ocho = confirm('¿Resultado de 8 o más?');
+                if (ocho == true) { 
+                alert('Hecho, sigue jugando');
+                var ultima_59 = document.getElementById('guardia_ocho');
+                ultima = juego_corto.length - 1;
+                ultima_59.innerHTML = '<a class="mas_ocho" data-guardia="'+ultima+'" id="guardia_mas8">8+</a>'
+                var guardia_8 = document.getElementById('ocho');
+                guardia_8.style.visibility = 'hidden';                
+                }
+        }
 };
+
+document.querySelector( "#mazo_normal" ).onclick = function () {
+        alert('Lo siendo, de momento solo está habilitado la modalidad de juego corto');
+}
+
+document.querySelector( "#mazo_campaña" ).onclick = function () {
+        alert('Lo siendo, de momento solo está habilitado el juego corto');
+}
