@@ -34,16 +34,36 @@
   box-shadow: 0 1px 2px #333;
 }
 
-.siguiente {
+.siguiente:after {
   position: fixed;
   right: 0.5%;
   bottom: 8%;
+  display: flex;
+  content: url('./icons/arrow_right.png');
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  opacity: 0.4;
 }
 
-.anterior {
+.anterior:after {
   left: 0.5%;
   position: fixed;
   bottom: 8%;
+  display: flex;
+  content: url('./icons/arrow_left.png');
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  opacity: 0.4;
 }
 
 .carta {
@@ -66,17 +86,6 @@
   margin-top: 15%;
   text-align: center;
   padding: 0; 
-}
-
-.flecha {
-  max-width: 100%;
-  color: white !important;
-  font-size: 26pt;
-  padding: 0;
-  z-index: 1;
-  height: 2em;
-  width: 2em;
-  opacity: 0.4;
 }
 
 .marteuse {
