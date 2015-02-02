@@ -229,6 +229,11 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                       var guardia_8 = document.getElementById('ocho');
                       if (guardia_8) { guardia_8.style.visibility = 'hidden'; }  
                 }
+                var precarga = document.getElementById('preload');
+                viendomas = auxiliar +1;
+                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
+                var preload = document.getElementById('carta_siguiente');
+                preload.src = juego_corto[viendomas];   
         }
 
         document.querySelector('#atras').onclick = function moviendo(sentido) {
