@@ -143,4 +143,6 @@
 .icono_destino {
   width: 32px;
   height: 32px;
+  position: relative;
+  top: -0.4em;
 }
