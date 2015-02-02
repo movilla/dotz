@@ -160,6 +160,10 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
 
         var viendo = 0;
         document.querySelector('#alante').onclick = function moviendo(sentido) {
+                var carga = document.getElementById('carga');
+                if (carga) { carga.display = ''; }
+                var cargando = document.getElementById('cargando');
+                cargando.innerHTML = '<img id="carga" class="loading" src="style/icons/gif-load.gif">';
                 var imagen_actual = document.getElementById("carta_en_juego");
                 var ultima = juego_corto.length - 1;
                 var eldata = document.getElementById('marteuse_fijo');
@@ -231,9 +235,16 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 }
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
+                viendomenos = auxiliar -1;
                 precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
                 var preload = document.getElementById('carta_siguiente');
-                preload.src = juego_corto[viendomas];   
+                var preloadant = document.getElementById('carta_anterior');
+                preload.src = juego_corto[viendomas];
+                preloadant.src = juego_corto[viendomenos];
+                var carga = document.getElementById('carga');
+                carga.style.display = 'none';
+                
         }
 
         document.querySelector('#atras').onclick = function moviendo(sentido) {
@@ -273,6 +284,15 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                       var guardia_8 = document.getElementById('ocho');
                       if (guardia_8) { guardia_8.style.visibility = 'hidden'; }  
                 }
+                var precarga = document.getElementById('preload');
+                viendomas = auxiliar +1;
+                viendomenos = auxiliar -1;
+                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                var preload = document.getElementById('carta_siguiente');
+                var preloadant = document.getElementById('carta_anterior');
+                preload.src = juego_corto[viendomas];
+                preloadant.src = juego_corto[viendomenos];
         }
 
 
