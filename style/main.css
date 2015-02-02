@@ -35,7 +35,7 @@
 }
 
 .percarga {
-  visibility: hidden;
+  display: none;
 }
 
 .siguiente:after {

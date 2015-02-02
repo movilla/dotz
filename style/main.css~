@@ -34,6 +34,10 @@
   box-shadow: 0 1px 2px #333;
 }
 
+.percarga {
+  visibility: hidden;
+}
+
 .siguiente:after {
   position: fixed;
   right: 0.5%;
