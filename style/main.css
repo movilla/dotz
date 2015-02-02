@@ -94,8 +94,8 @@
 
 .esperando {
   position: fixed;
-  top: 1%;
-  right: 1%;
+  top: 0%;
+  right: 0%;
 }
 
 .num_carta {
