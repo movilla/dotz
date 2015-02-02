@@ -278,7 +278,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 }
 
         document.querySelector('#marteuse').onclick = function (){
-        var doctor = confirm('¿Colocar estar carta en el medio del Mazo de Robo?');
+        var doctor = confirm('¿Quieres colocar esta carta en medio del Mazo de Robo?');
                 if (doctor == true) { alert('Hecho');
                 var carta_marteruse = viendo;
                 var cuantas_quedan = (juego_corto.length - 1) - viendo;
@@ -320,9 +320,9 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
 };
 
 document.querySelector( "#mazo_normal" ).onclick = function () {
-        alert('Lo siendo, de momento solo está habilitado la modalidad de juego corto');
+        alert('Lo siendo, de momento solo está habilitada la modalidad de Juego Corto');
 }
 
 document.querySelector( "#mazo_campaña" ).onclick = function () {
-        alert('Lo siendo, de momento solo está habilitado el juego corto');
+        alert('Lo siendo, de momento solo está habilitada la modalidad de Juego Corto');
 }
