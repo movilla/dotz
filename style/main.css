@@ -30,7 +30,7 @@
   left: 0%;
   width: 100%;
   background: url('./icons/header-bg-long.jpg') #282323;
-  padding-top: 0.5em;
+  padding-top: 0.8em;
   box-shadow: 0 1px 2px #333;
 }
 
@@ -63,7 +63,7 @@
   margin-right: auto;
   font-size: 5em;
   display: table;
-  margin-top: 4%;
+  margin-top: 15%;
   text-align: center;
   padding: 0; 
 }
@@ -137,7 +137,7 @@
 }
 
 .destino {
-  margin-left: 75%;
+  margin-left: 35%;
 }
 
 .icono_destino {
