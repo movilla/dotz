@@ -82,7 +82,7 @@
 .marteuse {
   position: fixed;
   top: 0%;
-  right: 0%;
+  right: 50%;
   animation: parpadeo 2s;
   animation-iteration-count: infinite;
 }
@@ -95,7 +95,7 @@
 .esperando {
   position: fixed;
   top: 0%;
-  right: 0%;
+  right: 50%;
 }
 
 .num_carta {
@@ -136,8 +136,23 @@
   color: black;
 }
 
+.evento {
+  margin-left: 75%;
+}
+
 .destino {
-  margin-left: 35%;
+  margin-left: 5%;
+}
+
+.dado {
+  margin-left: 5%;
+}
+
+.icono_evento {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: -0.4em;
 }
 
 .icono_destino {
@@ -145,4 +160,11 @@
   height: 32px;
   position: relative;
   top: -0.4em;
+}
+
+.icono_dado {
+  width: 32px;
+  height: 32px;
+  position: relative;
+  top: -0.3em;
 }
