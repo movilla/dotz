@@ -190,9 +190,9 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                         imagen_actual.src = 'style/img/es/evento/59.jpg';
                         alert('Fin del juego');
                         return false;
-                                if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length - 2)))  {
+                        }
+                        if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length -2 )))  {
                                 alert('Juega la siguiente carta y después llega la Guardia Nacional')
-                                }
                         }
                 }
                 var ultimaguardiadata = document.getElementById('guardia_mas8');
