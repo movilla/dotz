@@ -5,6 +5,14 @@ document.querySelector('#carta_evento').onclick = function () {
         }
 }
 
+document.querySelector('#carta_destino').onclick = function () {
+        alert('Lo siendo, de momento no está habilitado el Mazo de Destino');
+}
+
+document.querySelector('#carta_dado').onclick = function () {
+        alert('Lo siendo, de momento no están habilitados las tiradas de dados');
+}
+
 Array.prototype.shuffle = function() {
 var input = this;
 
@@ -174,7 +182,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                         var data_marteuse = eldata.getAttribute('data-marteuse');
                         if ((data_marteuse) == (viendo)) {
                         imagen_actual.src = 'style/img/es/evento/46.jpg';
-                        alert('Aparece el Doctor Marteruse');
+                        alert('Aparece el Doctor Marteuse');
                         eldata.setAttribute('data-marteuse', '');
                         var doc = document.getElementById('doc');
                         if (doc) {doc.style.visibility = 'visible'; }
@@ -304,7 +312,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
 
         document.querySelector('#marteuse').onclick = function (){
         var doctor = confirm('¿Quieres colocar esta carta en medio del Mazo de Robo?');
-                if (doctor == true) { alert('Hecho');
+                if (doctor == true) { alert('¡Hecho! El Doctor Marteuse volverá a aparecer');
                 var carta_marteruse = viendo;
                 var cuantas_quedan = (juego_corto.length - 1) - viendo;
                 var marteuse_mitad = cuantas_quedan / 2; 
@@ -313,12 +321,12 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 var fijo_marteuse = document.getElementById('doc_marteuse');
                 fijo_marteuse.innerHTML = '<a class="esperando" data-marteuse="'+nueva_posicion+'" id="marteuse_fijo"><img class="active" src="style/img/marteuse_active.png"></a>'  
                 }
-                else { alert('Todo sigue igual');}
+                else { alert('Opción cancelada. Todo sigue igual');}
         }
 
         document.querySelector('#cinco').onclick = function (){
         var cinco = confirm('¿Resultado de 5 a 7?');
-                if (cinco == true) { alert('Hecho, sigue jugando');
+                if (cinco == true) { alert('¡Hecho! Sigue jugando');
                 var guardia_actura = viendo;
                 var cuantas_faltan = (juego_corto.length - 1) - viendo;
                 var colocacion = Math.floor((Math.random() * cuantas_faltan) + 1);
@@ -334,7 +342,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         document.querySelector('#ocho').onclick = function (){
         var ocho = confirm('¿Resultado de 8 o más?');
                 if (ocho == true) { 
-                alert('Hecho, sigue jugando');
+                alert('¡Hecho! Sigue jugando');
                 var ultima_59 = document.getElementById('guardia_ocho');
                 ultima = juego_corto.length - 1;
                 ultima_59.innerHTML = '<a class="mas_ocho" data-guardia="'+ultima+'" id="guardia_mas8">8+</a>'
