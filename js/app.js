@@ -10,7 +10,7 @@ document.querySelector('#carta_destino').onclick = function () {
 }
 
 document.querySelector('#carta_dado').onclick = function () {
-        alert('Lo siendo, de momento no están habilitados las tiradas de dados');
+        alert('Lo siendo, de momento no están habilitadas las tiradas de dados');
 }
 
 Array.prototype.shuffle = function() {
