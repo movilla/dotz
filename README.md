@@ -24,3 +24,7 @@ Versiones
 * Corregidos errores con diversas cartas (Doctor Marteuse y Guardia Nacional).
 * Corregidos errores de posicionamiento.
 * Añadida barra de navegación para incorporar nuevas opciones.
+
+0.0.3
+* Corregido problema cuando volvía a aparecer la carta de la Guardia Nacional.
+* Corregio problema que provocaba que el Doctor Marteuse no puediera a ser incorporado al mazo.
