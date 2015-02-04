@@ -6,7 +6,20 @@ document.querySelector('#carta_evento').onclick = function () {
 }
 
 document.querySelector('#carta_destino').onclick = function () {
-        alert('Lo siendo, de momento no está habilitado el Mazo de Destino');
+        var destino = document.getElementById('webdestino');
+        var cartadestino = document.getElementById('icon_dest');
+        var sino = cartadestino.getAttribute('data-arriba');
+        if (sino == 'si') {
+                destino.style.animation = 'parriba 1s forwards';
+                destino.innerHTML = '<img id="carta_juego_destino" class="carta" src="style/img/es/destino/DOTZ_Dorso_Destino.jpg">';
+                cartadestino.style.animation = 'girapabajo 1s forwards';
+                cartadestino.setAttribute('data-arriba', 'no')
+        }
+        else {
+                destino.style.animation = 'pabajo 1s forwards';
+                cartadestino.style.animation = 'giraparriba 1s forwards';
+                cartadestino.setAttribute('data-arriba', 'si')
+        }      
 }
 
 document.querySelector('#carta_dado').onclick = function () {

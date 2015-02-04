@@ -101,7 +101,7 @@
   animation: parpadeo 2s;
   animation-iteration-count: infinite;
 }
-  @keyframes parpadeo {	
+@keyframes parpadeo {	
         0%	{opacity: 1;}
 	50%	{opacity: 0.2;}
 	100%    {opacity: 1;}
@@ -196,4 +196,24 @@
   color: white;
   height: 100%;
   width: 100%;
+}
+
+@keyframes parriba {	
+        0%	{top: 110%;}
+	100%    {top: 0%;}
+}
+
+@keyframes girapabajo {	
+        0%	{transform: rotate(0deg);}
+	100%    {transform: rotate(180deg);}
+}
+
+@keyframes pabajo {	
+        0%	{top: 0%;}
+	100%    {top: 110%;}
+}
+
+@keyframes giraparriba {	
+        0%	{transform: rotate(180deg);}
+	100%    {transform: rotate(0deg);}
 }
