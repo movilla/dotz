@@ -196,7 +196,14 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                         var data_guardia = laguardiadata.getAttribute('data-guardia');
                         if ((data_guardia) == (viendo)) {
                         imagen_actual.src = 'style/img/es/evento/59.jpg';
-                        alert('Fin del juego');
+                        alert('Aparece de nuevo la carta de la Guardia Nacional');
+                        laguardiadata.setAttribute('data-guardia', '')
+                        var anima_cinco = document.getElementById('cinco');
+                        anima_cinco.style.visibility = 'visible';
+                        var laguardia5 = document.getElementById('guardia_cinco');
+                        laguardia5.style.visibility = 'hidden';
+                        var laguardia8 = document.getElementById('ocho');
+                        laguardia8.style.visibility = 'visible';
                         return false;
                         }
                         if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length -2 )))  {
