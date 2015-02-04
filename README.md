@@ -27,4 +27,4 @@ Versiones
 
 0.0.3
 * Corregido problema cuando volvía a aparecer la carta de la Guardia Nacional.
-* Corregio problema que provocaba que el Doctor Marteuse no puediera a ser incorporado al mazo.
+* Corregido problema que provocaba que el Doctor Marteuse no puediera a ser incorporado al mazo.
