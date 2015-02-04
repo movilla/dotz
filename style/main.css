@@ -47,7 +47,7 @@
 }
 
 .pregunta_mazos {
-  font-size: 2.2em;
+  font-size: 2.0em;
   color: #f60a05;
   text-align: center;
   text-shadow: -0.1em 0.1em 0.04em #000;
@@ -232,7 +232,7 @@
 .sms_flechas {
   position: fixed;
   font-size: 2em;
-  left: -60%;
+  left: -65%;
   bottom: 10%;
   text-align: justify;
   overflow: hidden;
@@ -262,6 +262,6 @@
 }
 
 @keyframes palao {	
-        0%	{left: -60%;}
-	100%     {left: 160%;}
+        0%	{left: -65%;}
+	100%     {left: 165%;}
 }
