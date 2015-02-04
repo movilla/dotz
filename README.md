@@ -18,11 +18,9 @@ Versiones
 ====
 
 0.0.1
-===
 * Versión de pruebas.
 
 0.0.2
-===
 * Corregidos errores con diversas cartas (Doctor Marteuse y Guardia Nacional).
 * Corregidos errores de posicionamiento.
 * Añadida barra de navegación para incorporar nuevas opciones.
