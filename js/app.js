@@ -376,6 +376,6 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
         alert('Lo siendo, de momento solo está habilitada la modalidad de Juego Corto');
 }
 
-document.querySelector( "#mazo_campaña" ).onclick = function () {
+document.querySelector( "#mazo_campana" ).onclick = function () {
         alert('Lo siendo, de momento solo está habilitada la modalidad de Juego Corto');
 }

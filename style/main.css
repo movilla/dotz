@@ -39,6 +39,38 @@
   display: none;
 }
 
+.txt_intro {
+  font-size: 3em;
+  text-align: center;
+  color: #f60a05;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+}
+
+.pregunta_mazos {
+  font-size: 2.2em;
+  color: #f60a05;
+  text-align: center;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+}
+
+.corto {
+  font-size: 3.5em;
+  color: #f60a05;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+}
+
+.normal {
+  font-size: 3.5em;
+  color: #f60a05;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+}
+
+.campana {
+  font-size: 3.5em;
+  color: #f60a05;
+  text-shadow: -0.1em 0.2em 0.1em #000;
+}
+
 .siguiente:after {
   position: fixed;
   right: 0.5%;
@@ -86,7 +118,6 @@
   position: relative;
   margin-left: auto;
   margin-right: auto;
-  font-size: 5em;
   display: table;
   margin-top: 15%;
   text-align: center;
