@@ -84,7 +84,7 @@
   z-index: 1;
   height: 2em;
   width: 2em;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .anterior:after {
@@ -100,7 +100,7 @@
   z-index: 1;
   height: 2em;
   width: 2em;
-  opacity: 0.4;
+  opacity: 0.7;
 }
 
 .carta {
