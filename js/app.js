@@ -186,6 +186,9 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         juego_corto[30] = 'style/img/es/evento/'+fin_2d+'.jpg';
         juego_corto[31] = 'style/img/es/evento/'+fin_3d+'.jpg';
 
+        var smsflechas = document.getElementById('alerta_flechas');
+        smsflechas.style.animation = 'palao 15s forwards';
+        
         var viendo = 0;
         document.querySelector('#alante').onclick = function moviendo(sentido) {
                 var imagen_actual = document.getElementById("carta_en_juego");

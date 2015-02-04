@@ -229,6 +229,18 @@
   width: 100%;
 }
 
+.sms_flechas {
+  position: fixed;
+  font-size: 2em;
+  left: -60%;
+  bottom: 10%;
+  text-align: justify;
+  overflow: hidden;
+  width: 100%;
+  color: #f60a05;
+  text-shadow: -1px 2px 1px #000;
+}
+
 @keyframes parriba {	
         0%	{top: 110%;}
 	100%    {top: 0%;}
@@ -247,4 +259,9 @@
 @keyframes giraparriba {	
         0%	{transform: rotate(180deg);}
 	100%    {transform: rotate(0deg);}
+}
+
+@keyframes palao {	
+        0%	{left: -60%;}
+	100%     {left: 160%;}
 }
