@@ -20,6 +20,7 @@ Versiones
 0.0.1
 ===
 * Versión de pruebas.
+
 0.0.2
 ===
 * Corregidos errores con diversas cartas (Doctor Marteuse y Guardia Nacional).
