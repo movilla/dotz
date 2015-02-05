@@ -30,6 +30,6 @@ Versiones
 * Corregido problema que provocaba que el Doctor Marteuse no puediera a ser incorporado al mazo.
 
 0.0.4
-* Incio de la aplicación más amigable.
+* Inicio de la aplicación más amigable.
 * Indicación para pasar a la carta siguiente.
 * Inicio del entorno para cartas de Destino.
