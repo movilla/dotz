@@ -188,6 +188,10 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
 
         var smsflechas = document.getElementById('alerta_flechas');
         smsflechas.style.animation = 'palao 15s forwards';
+
+        var prepricarga = document.getElementById('preload');
+        prepricarga.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/evento/'+azul_1d+'.jpg">';
+        
         
         var viendo = 0;
         document.querySelector('#alante').onclick = function moviendo(sentido) {
