@@ -36,4 +36,4 @@ Versiones
 
 0.0.5
 * Añadidas cartas de Destino.
-* Anñadida modalidad de juego Normal.
+* Añadida modalidad de juego Normal.
