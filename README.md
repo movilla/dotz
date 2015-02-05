@@ -33,3 +33,6 @@ Versiones
 * Inicio de la aplicación más amigable.
 * Indicación para pasar a la carta siguiente.
 * Inicio del entorno para cartas de Destino.
+
+0.0.5
+* Añadidas cartas de Destino.
