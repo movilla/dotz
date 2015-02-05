@@ -1,31 +1,3 @@
-document.querySelector('#carta_evento').onclick = function () {
-        var nuevo = confirm('¿Quieres reiniciar el juego?');
-        if (nuevo == true) { 
-                location.href = 'index.html'
-        }
-}
-
-document.querySelector('#carta_destino').onclick = function () {
-        var destino = document.getElementById('webdestino');
-        var cartadestino = document.getElementById('icon_dest');
-        var sino = cartadestino.getAttribute('data-arriba');
-        if (sino == 'si') {
-                destino.style.animation = 'parriba 1s forwards';
-                destino.innerHTML = '<img id="carta_juego_destino" class="carta" src="style/img/es/destino/DOTZ_Dorso_Destino.jpg">';
-                cartadestino.style.animation = 'girapabajo 1s forwards';
-                cartadestino.setAttribute('data-arriba', 'no')
-        }
-        else {
-                destino.style.animation = 'pabajo 1s forwards';
-                cartadestino.style.animation = 'giraparriba 1s forwards';
-                cartadestino.setAttribute('data-arriba', 'si')
-        }      
-}
-
-document.querySelector('#carta_dado').onclick = function () {
-        alert('Lo siendo, de momento no están habilitadas las tiradas de dados');
-}
-
 Array.prototype.shuffle = function() {
 var input = this;
 
@@ -38,6 +10,141 @@ for (var i = input.length-1; i >=0; i--) {
     input[i] = itemAtIndex;
 }
 return input;
+}
+
+document.querySelector('#carta_evento').onclick = function () {
+        var nuevo = confirm('¿Quieres reiniciar el juego?');
+        if (nuevo == true) { 
+                location.href = 'index.html'
+        }
+}
+
+document.querySelector('#carta_destino').onclick = function () {
+        var destino = document.getElementById('webdestino');
+        var cartadestino = document.getElementById('icon_dest');
+        var desflechas = document.getElementById('des_flechas');
+        var acto = document.getElementById('acto');
+        var desacto = document.getElementById('des_acto'); 
+        var sino = cartadestino.getAttribute('data-arriba');
+        var nuevodestino = destino.getAttribute('data-destino');
+        if (sino == 'si') {
+                destino.style.animation = 'parriba 1s forwards';
+                cartadestino.style.animation = 'girapabajo 1s forwards';
+                cartadestino.setAttribute('data-arriba', 'no')
+                desflechas.style.visibility ='visible';
+                acto.style.visibility ='hidden';
+                desacto.style.visibility ='visible';
+        }
+        else {
+                destino.style.animation = 'pabajo 1s forwards';
+                cartadestino.style.animation = 'giraparriba 1s forwards';
+                cartadestino.setAttribute('data-arriba', 'si')
+                desflechas.style.visibility ='hidden';
+                desacto.style.visibility ='hidden';
+                acto.style.visibility ='visible';
+        }
+
+        if (nuevodestino == 'nuevo' ) {
+                cdestino = ['A', 'AA', 'B', 'BB', 'C', 'CC', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z']
+                cdestino.shuffle();
+                var cdes_1 = cdestino[0]
+                var cdes_2 = cdestino[1]
+                var cdes_3 = cdestino[2]
+                var cdes_4 = cdestino[3]
+                var cdes_5 = cdestino[4]
+                var cdes_6 = cdestino[5]
+                var cdes_7 = cdestino[6]
+                var cdes_8 = cdestino[7]
+                var cdes_9 = cdestino[8]
+                var cdes_10 = cdestino[9]
+                var cdes_11 = cdestino[10]
+                var cdes_12 = cdestino[11]
+                var cdes_13 = cdestino[12]
+                var cdes_14 = cdestino[13]
+                var cdes_15 = cdestino[14]
+                var cdes_16 = cdestino[15]
+                var cdes_17 = cdestino[16]
+                var cdes_18 = cdestino[17]
+                var cdes_19 = cdestino[18]
+                var cdes_20 = cdestino[19]
+                var cdes_21 = cdestino[20]
+                var cdes_22 = cdestino[21]
+                var cdes_23 = cdestino[22]
+                var cdes_24 = cdestino[23]
+                var cdes_25 = cdestino[24]
+                var cdes_26 = cdestino[25]
+                var cdes_27 = cdestino[26]
+                var cdes_28 = cdestino[27]
+                var cdes_29 = cdestino[28]    
+
+                var mazo_destino = new Array();
+                mazo_destino[0] = 'style/img/es/destino/DOTZ_Dorso_Destino.jpg';
+                mazo_destino[1] = 'style/img/es/destino/'+cdes_1+'.jpg';
+                mazo_destino[2] = 'style/img/es/destino/'+cdes_2+'.jpg';
+                mazo_destino[3] = 'style/img/es/destino/'+cdes_3+'.jpg';
+                mazo_destino[4] = 'style/img/es/destino/'+cdes_4+'.jpg';
+                mazo_destino[5] = 'style/img/es/destino/'+cdes_5+'.jpg';
+                mazo_destino[6] = 'style/img/es/destino/'+cdes_6+'.jpg';
+                mazo_destino[7] = 'style/img/es/destino/'+cdes_7+'.jpg';
+                mazo_destino[8] = 'style/img/es/destino/'+cdes_8+'.jpg';
+                mazo_destino[9] = 'style/img/es/destino/'+cdes_9+'.jpg';
+                mazo_destino[10] = 'style/img/es/destino/'+cdes_10+'.jpg';
+                mazo_destino[11] = 'style/img/es/destino/'+cdes_11+'.jpg';
+                mazo_destino[12] = 'style/img/es/destino/'+cdes_12+'.jpg';
+                mazo_destino[13] = 'style/img/es/destino/'+cdes_13+'.jpg';
+                mazo_destino[14] = 'style/img/es/destino/'+cdes_14+'.jpg';
+                mazo_destino[15] = 'style/img/es/destino/'+cdes_15+'.jpg';
+                mazo_destino[16] = 'style/img/es/destino/'+cdes_16+'.jpg';
+                mazo_destino[17] = 'style/img/es/destino/'+cdes_17+'.jpg';
+                mazo_destino[18] = 'style/img/es/destino/'+cdes_18+'.jpg';
+                mazo_destino[19] = 'style/img/es/destino/'+cdes_19+'.jpg';
+                mazo_destino[20] = 'style/img/es/destino/'+cdes_20+'.jpg';
+                mazo_destino[21] = 'style/img/es/destino/'+cdes_21+'.jpg';
+                mazo_destino[22] = 'style/img/es/destino/'+cdes_22+'.jpg';
+                mazo_destino[23] = 'style/img/es/destino/'+cdes_23+'.jpg';
+                mazo_destino[24] = 'style/img/es/destino/'+cdes_24+'.jpg';
+                mazo_destino[25] = 'style/img/es/destino/'+cdes_25+'.jpg';
+                mazo_destino[26] = 'style/img/es/destino/'+cdes_26+'.jpg';
+                mazo_destino[27] = 'style/img/es/destino/'+cdes_27+'.jpg';
+                mazo_destino[28] = 'style/img/es/destino/'+cdes_28+'.jpg';
+                mazo_destino[29] = 'style/img/es/destino/'+cdes_29+'.jpg';
+
+                destino.setAttribute('data-destino', 'viejo');
+
+                var desviendo = 0;
+                document.querySelector('#desalante').onclick = function moviendo(desentido) {
+                        var desimagen_actual = document.getElementById('carta_juego_destino');
+                        var desultima = mazo_destino.length - 1;
+                        var desentido = 1;
+                        var desauxiliar = desviendo + desentido;
+                                if ( desauxiliar < 0) { desauxiliar = desultima; }
+                                if ( desauxiliar > desultima) { desauxiliar = 0; }
+                        desviendo = desauxiliar;
+                        desimagen_actual.src = mazo_destino[desviendo];
+                        var desacto = document.getElementById('des_acto');
+                        desacto.innerHTML = '<a class="num_carta">'+desviendo+'/'+desultima+'</a>'
+                        document.getElementById('desatras').style.visibility = ''; 
+                }
+                document.querySelector('#desatras').onclick = function moviendo(desentido) {
+                        var desimagen_actual = document.getElementById('carta_juego_destino');
+                        var desultima = mazo_destino.length - 1;
+                        var desentido = -1;
+                        var desauxiliar = desviendo + desentido;
+                                if ( desauxiliar < 0) { desauxiliar = desultima; }
+                                if ( desauxiliar > desultima) { desauxiliar = 0; }
+                        desviendo = desauxiliar;
+                        desimagen_actual.src = mazo_destino[desviendo];
+                        var desacto = document.getElementById('des_acto');
+                        desacto.innerHTML = '<a class="num_carta">'+desviendo+'/'+desultima+'</a>'
+                                if (desviendo == (mazo_destino.length - mazo_destino.length)) {
+                                        document.getElementById('desatras').style.visibility = 'hidden';
+                                }
+                }
+        }
+}
+
+document.querySelector('#carta_dado').onclick = function () {
+        alert('Lo siendo, de momento no están habilitadas las tiradas de dados');
 }
 
 document.querySelector( "#mazo_corto" ).onclick = function () {
@@ -362,8 +469,6 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 fijo_59.innerHTML = '<a class="mas_cinco" data-guardia="'+nueva_59+'" id="guardia_mas5">5+</a>'
                 var guardia_5 = document.getElementById('cinco');
                 guardia_5.style.visibility = 'hidden'; 
-                }
-                else {
                 }
         }
         document.querySelector('#ocho').onclick = function (){
