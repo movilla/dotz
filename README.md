@@ -28,3 +28,8 @@ Versiones
 0.0.3
 * Corregido problema cuando volvía a aparecer la carta de la Guardia Nacional.
 * Corregido problema que provocaba que el Doctor Marteuse no puediera a ser incorporado al mazo.
+
+0.0.4
+* Incio de la aplicación más amigable.
+* Indicación para pasar a la carta siguiente.
+* Inicio del entorno para cartas de Destino.
