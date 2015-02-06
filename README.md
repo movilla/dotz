@@ -37,3 +37,7 @@ Versiones
 0.0.5
 * Añadidas cartas de Destino.
 * Añadida modalidad de juego Normal.
+
+0.0.6
+* Modificada la posición de las flechas.
+* Aumentado el tamaño de las cartas.
