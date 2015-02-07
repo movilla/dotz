@@ -3,7 +3,8 @@ Ayuda DOTZ
 
 Aplicación complementaria al juego de mesa Dawn of the Zeds (2ª Ed) con las siguientes funcionalidades:
 
-* Crea automáticamente el mazo para jugar a la modalidad de juego Corto.
+* Crea automáticamente los mazos para jugar a la modalidad de juego Corto, Normal y Campaña.
+* Crea automáticamente los mazo de cartas de Destino.
 
 Está previsto añadir la creación de mazos para las modalidades de juego Normal y Campaña, así como añadir Cartas de Destino.
 
@@ -41,3 +42,9 @@ Versiones
 0.0.6
 * Modificada la posición de las flechas.
 * Aumentado el tamaño de las cartas.
+
+0.0.7
+* Corregido error grave de posicionamiento de flecha en cargas de Destino.
+* Modificada la posición de los iconos de la barra de navegación según orden de uso.
+* Modificada la posición de Doctor Marteuse en barra de navagación para móviles.
+* Añadido modalidad de juego Campaña.
