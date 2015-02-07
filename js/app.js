@@ -22,7 +22,8 @@ document.querySelector('#carta_evento').onclick = function () {
 document.querySelector('#carta_destino').onclick = function () {
         var destino = document.getElementById('webdestino');
         var cartadestino = document.getElementById('icon_dest');
-        var desflechas = document.getElementById('des_flechas');
+	var des_delante = document.getElementById('desalante');
+	var des_atras = document.getElementById('desatras');
         var acto = document.getElementById('acto');
         var desacto = document.getElementById('des_acto'); 
         var sino = cartadestino.getAttribute('data-arriba');
@@ -31,7 +32,8 @@ document.querySelector('#carta_destino').onclick = function () {
                 destino.style.animation = 'parriba 2s forwards';
                 cartadestino.style.animation = 'girapabajo 1s forwards';
                 cartadestino.setAttribute('data-arriba', 'no')
-                desflechas.style.visibility ='visible';
+                des_delante.style.visibility ='visible';
+                des_atras.style.visibility ='visible';
                 acto.style.visibility ='hidden';
                 desacto.style.visibility ='visible';
         }
@@ -39,7 +41,8 @@ document.querySelector('#carta_destino').onclick = function () {
                 destino.style.animation = 'pabajo 1s forwards';
                 cartadestino.style.animation = 'giraparriba 1s forwards';
                 cartadestino.setAttribute('data-arriba', 'si')
-                desflechas.style.visibility ='hidden';
+                des_delante.style.visibility ='hidden';
+                des_atras.style.visibility ='hidden';
                 desacto.style.visibility ='hidden';
                 acto.style.visibility ='visible';
         }
@@ -124,7 +127,7 @@ document.querySelector('#carta_destino').onclick = function () {
                         desimagen_actual.src = mazo_destino[desviendo];
                         var desacto = document.getElementById('des_acto');
                         desacto.innerHTML = '<a class="num_carta">'+desviendo+'/'+desultima+'</a>'
-                        document.getElementById('desatras').style.visibility = '';
+                        document.getElementById('desatras').style.visibility = 'visible';
                         if (desviendo == (mazo_destino.length -1)) {
                                 document.getElementById('desalante').style.visibility = 'hidden';
                         }
