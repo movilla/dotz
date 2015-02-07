@@ -28,7 +28,7 @@ Versiones
 
 0.0.3
 * Corregido problema cuando volvía a aparecer la carta de la Guardia Nacional.
-* Corregido problema que provocaba que el Doctor Marteuse no puediera a ser incorporado al mazo.
+* Corregido problema que provocaba que el Doctor Marteuse no pudiera a ser incorporado al mazo.
 
 0.0.4
 * Inicio de la aplicación más amigable.
@@ -46,5 +46,5 @@ Versiones
 0.0.7
 * Corregido error grave de posicionamiento de flecha en cargas de Destino.
 * Modificada la posición de los iconos de la barra de navegación según orden de uso.
-* Modificada la posición de Doctor Marteuse en barra de navagación para móviles.
+* Modificada la posición de Doctor Marteuse en barra de navegación para móviles.
 * Añadido modalidad de juego Campaña.
