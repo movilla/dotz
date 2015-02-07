@@ -127,7 +127,7 @@
 .marteuse {
   position: fixed;
   top: 0%;
-  right: 50%;
+  left: 25%;
   z-index: 7;
   animation: parpadeo 2s;
   animation-iteration-count: infinite;
@@ -141,7 +141,7 @@
 .esperando {
   position: fixed;
   top: 0%;
-  right: 50%;
+  left: 25%;
   z-index: 7;
 }
 
@@ -184,15 +184,15 @@
   color: black;
 }
 
-.evento {
+.destino {
   margin-left: 60%;
 }
 
-.destino {
+.dado {
   margin-left: 3%;
 }
 
-.dado {
+.evento {
   margin-left: 3%;
 }
 

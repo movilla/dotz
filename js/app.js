@@ -29,7 +29,7 @@ document.querySelector('#carta_destino').onclick = function () {
         var sino = cartadestino.getAttribute('data-arriba');
         var nuevodestino = destino.getAttribute('data-destino');
         if (sino == 'si') {
-                destino.style.animation = 'parriba 2s forwards';
+                destino.style.animation = 'parriba 1s forwards';
                 cartadestino.style.animation = 'girapabajo 1s forwards';
                 cartadestino.setAttribute('data-arriba', 'no')
                 des_delante.style.visibility ='visible';
@@ -340,21 +340,21 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 var laguardiadata = document.getElementById('guardia_mas5');
                 if (laguardiadata) {
                         var data_guardia = laguardiadata.getAttribute('data-guardia');
-                        if ((data_guardia) == (viendo)) {
-                        imagen_actual.src = 'style/img/es/evento/59.jpg';
-                        alert('Aparece de nuevo la carta de la Guardia Nacional');
-                        laguardiadata.setAttribute('data-guardia', '')
-                        var anima_cinco = document.getElementById('cinco');
-                        anima_cinco.style.visibility = 'visible';
-                        var laguardia5 = document.getElementById('guardia_cinco');
-                        laguardia5.style.visibility = 'hidden';
-                        var laguardia8 = document.getElementById('ocho');
-                        laguardia8.style.visibility = 'visible';
-                        return false;
-                        }
-                        if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length -2 )))  {
-                                alert('Juega la siguiente carta y después llega la Guardia Nacional')
-                        }
+                        	if ((data_guardia) == (viendo)) {
+                        		imagen_actual.src = 'style/img/es/evento/59.jpg';
+                        		alert('Aparece de nuevo la carta de la Guardia Nacional');
+                        		laguardiadata.setAttribute('data-guardia', '')
+                        		var anima_cinco = document.getElementById('cinco');
+                        		anima_cinco.style.visibility = 'visible';
+                        		var laguardia5 = document.getElementById('guardia_cinco');
+                        		laguardia5.style.visibility = 'hidden';
+                        		var laguardia8 = document.getElementById('ocho');
+                        		laguardia8.style.visibility = 'visible';
+                        		return false;
+                        	}
+                        	if (((data_guardia) == (ultima)) && ((viendo) == (juego_corto.length -2 )))  {
+                                	alert('Juega la siguiente carta y después llega la Guardia Nacional')
+                        	}
                 }
                 var ultimaguardiadata = document.getElementById('guardia_mas8');
                 if (ultimaguardiadata) {
@@ -479,15 +479,17 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
 
         document.querySelector('#cinco').onclick = function (){
         var cinco = confirm('¿Resultado de 5 a 7?');
-                if (cinco == true) { alert('¡Hecho! Sigue jugando');
-                var guardia_actura = viendo;
-                var cuantas_faltan = (juego_corto.length - 1) - viendo;
-                var colocacion = Math.floor((Math.random() * cuantas_faltan) + 1);
-                var nueva_59 = viendo + colocacion;
-                var fijo_59 = document.getElementById('guardia_cinco');
-                fijo_59.innerHTML = '<a class="mas_cinco" data-guardia="'+nueva_59+'" id="guardia_mas5">5+</a>'
-                var guardia_5 = document.getElementById('cinco');
-                guardia_5.style.visibility = 'hidden'; 
+                if (cinco == true) { 
+			alert('¡Hecho! Sigue jugando');
+                	var guardia_actura = viendo;
+                	var cuantas_faltan = (juego_corto.length - 1) - viendo;
+               		var colocacion = Math.floor((Math.random() * cuantas_faltan) + 1);
+                	var nueva_59 = viendo + colocacion;
+                	var fijo_59 = document.getElementById('guardia_cinco');
+                	fijo_59.innerHTML = '<a class="mas_cinco" data-guardia="'+nueva_59+'" id="guardia_mas5">5+</a>'
+                	var guardia_5 = document.getElementById('cinco');
+                	guardia_5.style.visibility = 'hidden';
+			fijo_59.style.visibility = 'visible'; 
                 }
         }
         document.querySelector('#ocho').onclick = function (){
