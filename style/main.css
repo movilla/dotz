@@ -248,7 +248,7 @@
 
 @keyframes parriba_dado {	
         0%	{top: 110%;}
-	100%    {top: 60%;}
+	100%    {top: 50%;}
 }
 
 @keyframes girapabajo {	
@@ -313,16 +313,16 @@
 }
 
 .cen_lat_dcho {
-  position: absolute;
+  position: fixed;
   top: 110%;
-  left: 10%;
+  left: 20%;
   margin-top: -2.85rem;
 }
 
 .cen_lat_izq {
-  position: absolute;
+  position: fixed;
   top: 110%;
-  right: 10%;
+  right: 20%;
   margin-top: -2.85rem;
 }
 
@@ -339,7 +339,7 @@
 }
 
 .cubo3d div{
-  position: absolute;
+  position: fixed;
   width: 3.28rem;
   height: 3.28rem;
   border: 0.07rem solid #aaa;

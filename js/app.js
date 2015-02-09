@@ -156,10 +156,28 @@ document.querySelector('#carta_dado').onclick = function () {
         var d2g = document.getElementById('dado_dos');
         var tirador = document.getElementById('tirar');
         var fdados = document.getElementById('fondo_dados');
-        d1g.style.animation = 'parriba_dado 1s forwards';
-        d2g.style.animation = 'parriba_dado 1s forwards';
-        tirador.style.animation = 'parriba_dado 1s forwards';
-        fdados.style.animation = 'parriba 1s forwards';
+        var idados = document.getElementById('icon_dado');
+        var sino = idados.getAttribute('data-arriba');
+        var cartadestino = document.getElementById('icon_dest');
+        cartadestino.style.visibility = 'hidden';
+        if (tirador) { tirador.style.visibility = 'visible'; }
+        if (sino == 'si') {
+                idados.style.animation = 'girapabajo 1s forwards';
+                d1g.style.animation = 'parriba_dado 1s forwards';
+                d2g.style.animation = 'parriba_dado 1s forwards';
+                tirador.style.animation = 'parriba_dado 1s forwards';
+                fdados.style.animation = 'parriba 1s forwards';
+                idados.setAttribute('data-arriba', 'no')
+        } else {
+                idados.style.animation = 'giraparriba 1s forwards';
+                d1g.style.animation = 'pabajo_dado 1s forwards';
+                d2g.style.animation = 'pabajo_dado 1s forwards';
+                tirador.style.animation = 'pabajo_dado 1s forwards';
+                fdados.style.animation = 'pabajo 1s forwards';
+                idados.setAttribute('data-arriba', 'si')
+                tirador.style.visibility = 'hidden';
+                cartadestino.style.visibility = 'visible';
+        }
       
         if (d1g) { d1g.innerHTML = '<div id="primer_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="c_uno first"></a></div><div class="cara2_uno solo"><a class="c_dos second"></a></div><div class="cara3_uno solo"><a class="c_tres third"></a></div><div class="cara4_uno solo"><a class="c_cuatro fourth"></a></div><div class="cara5_uno solo"><a class="c_cinco fifth"></a></div><div class="cara6_uno solo"><a class="c_seis sixth"></a></div></div>'; }
 
