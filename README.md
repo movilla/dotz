@@ -12,6 +12,9 @@ Aplicación complementaria al juego de mesa Dawn of the Zeds (2ª Ed) con las si
 
 Traducción y maquetación de las cartas, es obra y gracias de [los usuarios de la LBSK](http://labsk.net/index.php?topic=125777.0).
 
+Ayuda DOTZ (translation)
+=====
+
 Complementary application to the board game Dawn of the Zeds (2nd Ed) with the following features:
 
 * Automatically creates decks to play the game mode Short, Normal and Campaign.
