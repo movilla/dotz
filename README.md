@@ -6,14 +6,24 @@ Aplicación complementaria al juego de mesa Dawn of the Zeds (2ª Ed) con las si
 * Crea automáticamente los mazos para jugar a la modalidad de juego Corto, Normal y Campaña.
 * Crea automáticamente los mazo de cartas de Destino.
 
-Está previsto añadir la creación de mazos para las modalidades de juego Normal y Campaña, así como añadir Cartas de Destino.
-
-
 [Dawn of the Zeds](http://www.victorypointgames.com/dawn-of-the-zeds-2nd-edition.html) es juego de la editorial Victory Point Games al cual corresponden los derechos sobre el mismo.
 
 [Ficha del juego Dawn of the Zeds en la BGG](http://boardgamegeek.com/boardgame/144568/dawn-zeds-second-edition).
 
 Traducción y maquetación de las cartas, es obra y gracias de [los usuarios de la LBSK](http://labsk.net/index.php?topic=125777.0).
+
+Ayuda DOTZ
+=====
+Complementary application to the board game Dawn of the Zeds (2nd Ed) with the following features:
+
+* Automatically creates decks to play the game mode Short, Normal and Campaign.
+* Automatically creates the Destiny deck of cards.
+
+[Dawn of the Zeds](http://www.victorypointgames.com/dawn-of-the-zeds-2nd-edition.html) is game publisher Victory Point Games which correspond rights on it.
+
+[Dawn of the Zeds on BGG](http://boardgamegeek.com/boardgame/144568/dawn-zeds-second-edition).
+
+Translation and layout of the cards is the work and thanks [LBSK users.](http://labsk.net/index.php?topic=125777.0).
 
 Versiones
 ====
