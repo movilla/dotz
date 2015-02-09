@@ -32,7 +32,7 @@
   background: url('./icons/header-bg-long.jpg') #282323;
   padding-top: 0.8em;
   box-shadow: 0 1px 2px #333;
-  z-index: 6;
+  z-index: 16;
 }
 
 .percarga {
@@ -128,7 +128,7 @@
   position: fixed;
   top: 0%;
   left: 25%;
-  z-index: 7;
+  z-index: 17;
   animation: parpadeo 2s;
   animation-iteration-count: infinite;
 }
@@ -142,7 +142,7 @@
   position: fixed;
   top: 0%;
   left: 25%;
-  z-index: 7;
+  z-index: 17;
 }
 
 .num_carta {
@@ -151,7 +151,7 @@
   left: 1%;
   font-size: 2em;
   color: white;
-  z-index: 7;
+  z-index: 17;
 }
 
 .guardia_nacional_5, .guardia_nacional_8 {
@@ -246,6 +246,11 @@
 	100%    {top: 0%;}
 }
 
+@keyframes parriba_dado {	
+        0%	{top: 110%;}
+	100%    {top: 60%;}
+}
+
 @keyframes girapabajo {	
         0%	{transform: rotate(0deg);}
 	100%    {transform: rotate(180deg);}
@@ -305,4 +310,195 @@
 
 #des_acto {
   visibility: hidden;
+}
+
+.cen_lat_dcho {
+  position: absolute;
+  top: 110%;
+  left: 10%;
+  margin-top: -2.85rem;
+}
+
+.cen_lat_izq {
+  position: absolute;
+  top: 110%;
+  right: 10%;
+  margin-top: -2.85rem;
+}
+
+.cubo3d {
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: initial;
+  animation-duration: 1.50s;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -moz-transform-origin: 1.64rem 1.64rem 0;
+  transform-origin: 1.64rem 1.64rem 0;
+  animation-fill-mode: forwards;
+  z-index: 10;
+}
+
+.cubo3d div{
+  position: absolute;
+  width: 3.28rem;
+  height: 3.28rem;
+  border: 0.07rem solid #aaa;
+  background: #fff;
+}
+
+.solo {
+  width: 3.27rem !important;
+  height: 3.27rem !important;
+  -moz-transform-origin: 1.64rem 1.64rem 0 !important;
+  transform-origin: 1.64rem 1.64rem 0 !important;
+}
+
+.cara1_uno {
+  -moz-transform: translateZ(1.64rem);
+  transform: translateZ(1.64rem);
+}
+
+.cara2_uno {
+  -moz-transform: rotateY(90deg) translateZ(1.64rem);
+  transform: rotateY(90deg) translateZ(1.64rem);
+}
+
+.cara3_uno {
+  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(1.64rem);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(1.64rem);
+}
+
+.cara4_uno {
+  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(1.64rem);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(1.64rem);
+}
+
+.cara5_uno {
+  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(1.64rem);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(1.64rem);
+}
+
+.cara6_uno {
+  -moz-transform: rotateX(-90deg) translateZ(1.64rem);
+  transform: rotateX(-90deg) translateZ(1.64rem);
+}
+
+.c_uno:before {
+  content: url('icons/c_uno.png') !important;
+  -moz-transform: scale(0.5);
+  display: flex;
+  left: -20%;
+  position: absolute;
+  top: -20%;
+}
+
+.c_dos:before {
+  content: url('./icons/c_dos.png') !important;
+  -moz-transform: scale(0.5);
+  display: flex;
+  left: -20%;
+  position: absolute;
+  top: -20%;
+}
+
+.c_tres:before {
+  content: url('./icons/c_tres.png') !important;
+  -moz-transform: scale(0.5);
+  display: flex;
+  left: -20%;
+  position: absolute;
+  top: -20%;
+}
+
+.c_cuatro:before {
+  content: url('./icons/c_cuatro.png') !important;
+  -moz-transform: scale(0.5);
+  display: flex;
+  left: -20%;
+  position: absolute;
+  top: -20%;
+}
+
+.c_cinco:before {
+  content: url('./icons/c_cinco.png') !important;
+  -moz-transform: scale(0.5);
+  display: flex;
+  left: -20%;
+  position: absolute;
+  top: -20%;
+}
+
+.c_seis:before {
+  content: url('./icons/c_seis.png') !important;
+  -moz-transform: scale(0.5);
+  display: flex;
+  left: -20%;
+  position: absolute;
+  top: -20%;
+}
+
+.tirador {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  z-index: 10;
+}
+
+.tirar {
+  position: fixed;
+  left: 50%;
+  bottom: 5%;
+  margin-left: -3.57rem;
+  min-width: 7.14rem;
+  min-height: 2.85rem;
+  font-size: inherit;
+  border: medium none;
+  border-radius: 0.2rem;
+  background-color: #fff;
+  box-shadow: none;
+  color: #000;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.fondados {
+  background: url('img/pic1705546.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  right: 0%;
+  top: 110%;
+  z-index: 10;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes uno {
+  0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(360deg) rotateZ(360deg); }
+}
+
+@keyframes dos {
+  0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(270deg) rotateZ(360deg); }
+}
+
+@keyframes tres {
+  0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(360deg) rotateY(-90deg) rotateZ(-270deg); }
+}
+
+@keyframes cuatro {
+  0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(180deg) rotateY(360deg) rotateZ(270deg); }
+}
+
+@keyframes cinco {
+  0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(270deg) rotateY(180deg) rotateZ(90deg); }
+}
+
+@keyframes seis {
+  0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
+  100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(90deg) rotateY(-360deg) rotateZ(360deg); }
 }

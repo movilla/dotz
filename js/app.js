@@ -152,8 +152,78 @@ document.querySelector('#carta_destino').onclick = function () {
 };
 
 document.querySelector('#carta_dado').onclick = function () {
-        alert('Lo siendo, de momento no están habilitadas las tiradas de dados');
+        var d1g = document.getElementById('dado_uno');
+        var d2g = document.getElementById('dado_dos');
+        var tirador = document.getElementById('tirar');
+        var fdados = document.getElementById('fondo_dados');
+        d1g.style.animation = 'parriba_dado 1s forwards';
+        d2g.style.animation = 'parriba_dado 1s forwards';
+        tirador.style.animation = 'parriba_dado 1s forwards';
+        fdados.style.animation = 'parriba 1s forwards';
+      
+        if (d1g) { d1g.innerHTML = '<div id="primer_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="c_uno first"></a></div><div class="cara2_uno solo"><a class="c_dos second"></a></div><div class="cara3_uno solo"><a class="c_tres third"></a></div><div class="cara4_uno solo"><a class="c_cuatro fourth"></a></div><div class="cara5_uno solo"><a class="c_cinco fifth"></a></div><div class="cara6_uno solo"><a class="c_seis sixth"></a></div></div>'; }
+
+        if (d2g) { d2g.innerHTML = '<div id="segundo_dado" class="cubo3d solo"><div class="cara1_uno solo"><a class="calavera_uno first"></a></div><div class="cara2_uno solo"><a class="escudo_negro_uno second"></a></div><div class="cara3_uno solo"><a class="calavera_uno third"></a></div><div class="cara4_uno solo"><a class="calavera_uno fourth"></a></div><div class="cara5_uno solo"><a class="escudo_blanco_uno fifth"></a></div><div class="cara6_uno solo"><a class="escudo_blanco_uno sixth"></a></div></div>'; }
+
+        if (tirador) { tirador.innerHTML= '<button id="tirada" class="tirar">Tirar</button>'; }
 };
+
+document.querySelector('#tirar').onclick = function () {
+	var tirar = document.getElementById('tirada');
+        var time = tirar.getAttribute('data-time');
+	var primer_dado = document.getElementById('primer_dado');
+	var segundo_dado = document.getElementById('segundo_dado');
+	setTimeout(function() {
+		if (time) {
+			if (primer_dado) { primer_dado.style.animationDuration = time; }
+			if (segundo_dado) { segundo_dado.style.animationDuration = time; }
+		}
+		if (primer_dado) {
+			var tirada = Math.floor((Math.random() * 6) + 1);
+			if (tirada === 1) {
+				document.getElementById('primer_dado').style.animationName = 'uno';
+			}
+    			if (tirada === 2) {
+				document.getElementById('primer_dado').style.animationName = 'dos';
+			}
+    			if (tirada === 3) {
+      				document.getElementById('primer_dado').style.animationName = 'tres';
+    			}
+    			if (tirada === 4) {
+     				document.getElementById('primer_dado').style.animationName = 'cuatro';
+    			}
+    			if (tirada === 5) {
+      				document.getElementById('primer_dado').style.animationName = 'cinco';
+    			}
+    			if (tirada === 6) {
+      				document.getElementById('primer_dado').style.animationName = 'seis';
+    			}
+		}
+		if (segundo_dado) {
+			var tirada_2 = Math.floor((Math.random() * 6) + 1);
+			if (tirada_2 === 1) {
+				document.getElementById('segundo_dado').style.animationName = 'uno';
+			}
+    			if (tirada_2 === 2) {
+				document.getElementById('segundo_dado').style.animationName = 'dos';
+			}
+    			if (tirada_2 === 3) {
+      				document.getElementById('segundo_dado').style.animationName = 'tres';
+    			}
+    			if (tirada_2 === 4) {
+     				document.getElementById('segundo_dado').style.animationName = 'cuatro';
+    			}
+    			if (tirada_2 === 5) {
+      				document.getElementById('segundo_dado').style.animationName = 'cinco';
+    			}
+    			if (tirada_2 === 6) {
+      				document.getElementById('segundo_dado').style.animationName = 'seis';
+    			}
+		}
+  	}, 30);
+};
+
+
 
 document.querySelector( "#mazo_corto" ).onclick = function () {
         var elect = document.getElementById('eleccion');
