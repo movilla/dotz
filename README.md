@@ -12,6 +12,8 @@ Aplicación complementaria al juego de mesa Dawn of the Zeds (2ª Ed) con las si
 
 Traducción y maquetación de las cartas, es obra y gracias de [los usuarios de la LBSK](http://labsk.net/index.php?topic=125777.0).
 
+[Hilo de la aplicación en la BGG](http://boardgamegeek.com/thread/1317288/app-dawn-zeds-hispanic-community)
+
 Ayuda DOTZ (translation)
 =====
 
@@ -25,6 +27,8 @@ Complementary application to the board game Dawn of the Zeds (2nd Ed) with the f
 [Dawn of the Zeds on BGG](http://boardgamegeek.com/boardgame/144568/dawn-zeds-second-edition).
 
 Translation and layout of the cards is the work and thanks [LBSK users.](http://labsk.net/index.php?topic=125777.0).
+
+[Aplications thread on BGG](http://boardgamegeek.com/thread/1317288/app-dawn-zeds-hispanic-community)
 
 Versiones
 ====
@@ -59,3 +63,6 @@ Versiones
 * Modificada la posición de los iconos de la barra de navegación según orden de uso.
 * Modificada la posición de Doctor Marteuse en barra de navegación para móviles.
 * Añadido modalidad de juego Campaña.
+
+0.0.8
+* Añadida la posibilidad de lanzar dos dados de seis caras.
