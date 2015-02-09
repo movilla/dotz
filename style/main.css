@@ -452,13 +452,13 @@
   min-width: 7.14rem;
   min-height: 2.85rem;
   font-size: 1.5em;
-  border: medium none;
   border-radius: 0.2rem;
   background-color: #fff;
   box-shadow: none;
   color: #000;
   cursor: pointer;
   z-index: 10;
+  border: 0.07rem solid #6E6E6E;
 }
 
 .fondados {
