@@ -70,4 +70,4 @@ Versiones
 0.0.9
 * Corregidos fallos de posicionamiento de los dados.
 * Mejorada la apariencia de los dados.
-* Añada precarga de imagenes para cartas de despino.
+* Añada precarga de imagenes para cartas de destino.
