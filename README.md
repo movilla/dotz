@@ -66,3 +66,8 @@ Versiones
 
 0.0.8
 * Añadida la posibilidad de lanzar dos dados de seis caras.
+
+0.0.9
+* Corregidos fallos de posicionamiento de los dados.
+* Mejorada la apariencia de los dados.
+* Añada precarga de imagenes para cartas de despino.

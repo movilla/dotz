@@ -335,14 +335,14 @@
   -moz-transform-origin: 1.64rem 1.64rem 0;
   transform-origin: 1.64rem 1.64rem 0;
   animation-fill-mode: forwards;
-  z-index: 10;
+  z-index: 11;
 }
 
 .cubo3d div{
   position: fixed;
   width: 3.28rem;
   height: 3.28rem;
-  border: 0.07rem solid #6E6E6E;
+  border: 0.05rem solid #6E6E6E;
   background: #fff;
 }
 
@@ -384,57 +384,57 @@
 }
 
 .c_uno:before {
-  content: url('icons/c_uno.png') !important;
-  -moz-transform: scale(0.5);
+  content: url('icons/c_uno.png');
+  -moz-transform: scale(0.69);
   display: flex;
-  left: -20%;
+  left: -17%;
   position: absolute;
-  top: -20%;
+  top: -17%;
 }
 
 .c_dos:before {
-  content: url('./icons/c_dos.png') !important;
-  -moz-transform: scale(0.5);
+  content: url('./icons/c_dos.png');
+  -moz-transform: scale(0.69);;
   display: flex;
-  left: -20%;
+  left: -17%;
   position: absolute;
-  top: -20%;
+  top: -17%;
 }
 
 .c_tres:before {
-  content: url('./icons/c_tres.png') !important;
-  -moz-transform: scale(0.5);
+  content: url('./icons/c_tres.png');
+  -moz-transform: scale(0.69);;
   display: flex;
-  left: -20%;
+  left: -17%;
   position: absolute;
-  top: -20%;
+  top: -17%;
 }
 
 .c_cuatro:before {
-  content: url('./icons/c_cuatro.png') !important;
-  -moz-transform: scale(0.5);
+  content: url('./icons/c_cuatro.png');
+  -moz-transform: scale(0.69);;
   display: flex;
-  left: -20%;
+  left: -17%;
   position: absolute;
-  top: -20%;
+  top: -17%;
 }
 
 .c_cinco:before {
-  content: url('./icons/c_cinco.png') !important;
-  -moz-transform: scale(0.5);
+  content: url('./icons/c_cinco.png');
+  -moz-transform: scale(0.69);;
   display: flex;
-  left: -20%;
+  left: -17%;
   position: absolute;
-  top: -20%;
+  top: -17%;
 }
 
 .c_seis:before {
-  content: url('./icons/c_seis.png') !important;
-  -moz-transform: scale(0.5);
+  content: url('./icons/c_seis.png');
+  -moz-transform: scale(0.69);;
   display: flex;
-  left: -20%;
+  left: -17%;
   position: absolute;
-  top: -20%;
+  top: -17%;
 }
 
 .tirador {
@@ -458,7 +458,7 @@
   color: #000;
   cursor: pointer;
   z-index: 10;
-  border: 0.07rem solid #6E6E6E;
+  border: 0.08rem solid #6E6E6E;
 }
 
 .fondados {
@@ -471,6 +471,10 @@
   color: white;
   height: 100%;
   width: 100%;
+}
+
+.preloaddest {
+  visibility: hidden;
 }
 
 @keyframes uno {
@@ -502,3 +506,5 @@
   0% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(0deg) rotateY(0deg) rotateZ(0deg); }
   100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(90deg) rotateY(-360deg) rotateZ(360deg); }
 }
+
+

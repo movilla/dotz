@@ -114,6 +114,8 @@ document.querySelector('#carta_destino').onclick = function () {
 
                 destino.setAttribute('data-destino', 'viejo');
                 document.getElementById('desatras').style.visibility = 'hidden';
+                var predestino = document.getElementById('predestino');
+                predestino.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/destino/'+cdes_1+'.jpg">';
 
                 var desviendo = 0;
                 document.querySelector('#desalante').onclick = function moviendo(desentido) {
@@ -131,6 +133,15 @@ document.querySelector('#carta_destino').onclick = function () {
                         if (desviendo == (mazo_destino.length -1)) {
                                 document.getElementById('desalante').style.visibility = 'hidden';
                         }
+                        var predestino = document.getElementById('predestino');
+                        viendodesmas = desauxiliar +1;
+                        viendodesmenos = desauxiliar -1;
+                        predestino.innerHTML = '<img id="cartades_siguiente" class="" src="">';
+                        predestino.innerHTML += '<img id="cartades_anterior" class="" src="">';
+                        var predesload = document.getElementById('cartades_siguiente');
+                        var predesloadant = document.getElementById('cartades_anterior');
+                        predesload.src = mazo_destino[viendodesmas];
+                        predesloadant.src = mazo_destino[viendodesmenos];
                 }
                 document.querySelector('#desatras').onclick = function moviendo(desentido) {
                         var desimagen_actual = document.getElementById('carta_juego_destino');
@@ -147,6 +158,15 @@ document.querySelector('#carta_destino').onclick = function () {
                                         document.getElementById('desatras').style.visibility = 'hidden';
                                 }
                         document.getElementById('desalante').style.visibility = 'visible';
+                        var predestino = document.getElementById('predestino');
+                        viendodesmas = desauxiliar +1;
+                        viendodesmenos = desauxiliar -1;
+                        predestino.innerHTML = '<img id="cartades_siguiente" class="" src="">';
+                        predestino.innerHTML += '<img id="cartades_anterior" class="" src="">';
+                        var predesload = document.getElementById('cartades_siguiente');
+                        var predesloadant = document.getElementById('cartades_anterior');
+                        predesload.src = mazo_destino[viendodesmas];
+                        predesloadant.src = mazo_destino[viendodesmenos];
                 }
         }
 };
