@@ -390,6 +390,7 @@
   left: -17%;
   position: absolute;
   top: -17%;
+  box-shadow: inset 0px 0px 40px #000;
 }
 
 .c_dos:before {
