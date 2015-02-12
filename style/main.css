@@ -507,4 +507,8 @@
   100% { transform: translate3d(0rem,0rem,0rem) translateZ(0rem) rotateX(90deg) rotateY(-360deg) rotateZ(360deg); }
 }
 
-
+.mantener {
+  position: absolute;
+  top: 50%;
+  left: 1%;
+}

@@ -171,7 +171,7 @@ document.querySelector('#carta_destino').onclick = function () {
                 document.querySelector('#reserva').onclick = function () {
                         var almacen = document.getElementById('almacen');
                         resercard = mazo_destino[desviendo];
-                        almacen.insertAdjacentHTML('afterend','<img id="carta_siguiente" class="" src="'+resercard+'">');
+                        almacen.insertAdjacentHTML('afterend','<img id="carta_siguiente" class="" src="style/img/es/destino/'+resercard+'">');
                 }        
         
 
