@@ -512,3 +512,59 @@
   top: 50%;
   left: 1%;
 }
+
+.destino_reserva {
+  position: absolute;
+  right: 2%;
+  top: 50%;
+}
+
+.almacen_card {
+  z-index: 5;
+  background: url('img/dotz_mapfarmingdale.jpg') no-repeat center center fixed;
+  background-size: cover;
+  position: fixed;
+  right: 0%;
+  top: 110%;
+  z-index: 5;
+  color: white;
+  height: 100%;
+  width: 100%;
+}
+
+.al_siguiente:after {
+  position: fixed;
+  right: 0.5%;
+  bottom: 8%;
+  display: flex;
+  content: url('./icons/arrow_right.png');
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 5;
+  height: 2em;
+  width: 2em;
+  opacity: 0.7;
+}
+
+.al_anterior:after {
+  left: 0.5%;
+  position: fixed;
+  bottom: 8%;
+  display: flex;
+  content: url('./icons/arrow_left.png');
+  max-width: 100%;
+  color: white !important;
+  font-size: 26pt;
+  padding: 0;
+  z-index: 5;
+  height: 2em;
+  width: 2em;
+  opacity: 0.7;
+}
+
+#alm_flechas {
+  visibility: hidden;
+  z-index: 5;
+}

@@ -171,7 +171,7 @@ document.querySelector('#carta_destino').onclick = function () {
                 document.querySelector('#reserva').onclick = function () {
                         var almacen = document.getElementById('almacen');
                         resercard = mazo_destino[desviendo];
-                        almacen.insertAdjacentHTML('afterend','<img id="carta_siguiente" class="" src="'+resercard+'">');
+                        almacen.insertAdjacentHTML('beforeend','<img id="almacen_siguiente" class="carta" src="'+resercard+'">');
                 }        
         
 
@@ -1461,3 +1461,18 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                 }
         }
 };
+
+document.querySelector('#res_most').onclick = function (){
+        var almacen = document.getElementById('almacen');
+        almacen.style.animation = 'parriba 1s forwards';
+        var desatras = document.getElementById('desatras');
+        var desalante = document.getElementById('desalante');
+        desatras.style.visibility = 'hidden';
+        desalante.style.visibility = 'hidden';
+        var resatras = document.getElementById('resatras');
+        var resalante = document.getElementById('resalante');
+        resatras.style.visibility = 'visible';
+        resalante.style.visibility = 'visible';
+        var almacver = document.getElementById('almacen_siguiente');
+        almacver.style.visibility = 'hidden';
+};   
