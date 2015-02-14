@@ -116,6 +116,9 @@ document.querySelector('#carta_destino').onclick = function () {
                 document.getElementById('desatras').style.visibility = 'hidden';
                 var predestino = document.getElementById('predestino');
                 predestino.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/destino/'+cdes_1+'.jpg">';
+		var icreserva = document.getElementById('reserva_dest');
+		var marcalma = document.getElementById('dest_res');
+
 
                 var desviendo = 0;
                 document.querySelector('#desalante').onclick = function moviendo(desentido) {
@@ -142,6 +145,21 @@ document.querySelector('#carta_destino').onclick = function () {
                         var predesloadant = document.getElementById('cartades_anterior');
                         predesload.src = mazo_destino[viendodesmas];
                         predesloadant.src = mazo_destino[viendodesmenos];
+
+			var imagalmacen = document.getElementById('almacen_siguiente');
+			var cartino = document.getElementById('carta_juego_destino');
+			icreserva.style.visibility = 'visible';
+			marcalma.style.visibility = 'hidden';
+			if (imagalmacen) {
+				var listres = document.getElementsByClassName('alma');
+				for (var i = 0; i < listres.length; i++) {
+					if ((listres[i].src) === ( cartino.src)) {
+						marcalma.style.visibility = 'visible';
+						icreserva.style.visibility = 'hidden';
+					}
+				}
+			}
+
                 }
                 document.querySelector('#desatras').onclick = function moviendo(desentido) {
                         var desimagen_actual = document.getElementById('carta_juego_destino');
@@ -167,14 +185,46 @@ document.querySelector('#carta_destino').onclick = function () {
                         var predesloadant = document.getElementById('cartades_anterior');
                         predesload.src = mazo_destino[viendodesmas];
                         predesloadant.src = mazo_destino[viendodesmenos];
+
+			var imagalmacen = document.getElementById('almacen_siguiente');
+			var cartino = document.getElementById('carta_juego_destino');
+			icreserva.style.visibility = 'visible';
+			marcalma.style.visibility = 'hidden';
+			if (imagalmacen) {
+				var listres = document.getElementsByClassName('alma');
+				for (var i = 0; i < listres.length; i++) {
+					if ((listres[i].src) === ( cartino.src)) {
+						marcalma.style.visibility = 'visible';
+						icreserva.style.visibility = 'hidden';
+					}
+				}
+			}
                 }
                 document.querySelector('#reserva').onclick = function () {
                         var almacen = document.getElementById('almacen');
                         resercard = mazo_destino[desviendo];
-                        almacen.insertAdjacentHTML('beforeend','<img id="almacen_siguiente" class="carta" src="'+resercard+'">');
-                }        
-        
-
+  			var conservar = confirm('¿Conservar esta carta?');
+                	if (conservar == true) {
+				almacen.insertAdjacentHTML('beforeend','<img id="almacen_siguiente" class="alma" src="'+resercard+'">');
+				alert('¡Hecho!');
+			}
+                }
+                document.querySelector('#res_most').onclick = function () {
+                        var almacen = document.getElementById('almacen');
+                        resercard = mazo_destino[desviendo];
+			var cartino = document.getElementById('carta_juego_destino');
+  			var desconse = confirm('¿Dejar de conservar esta carta?');
+                	if (desconse == true) {
+				var listares = document.getElementsByClassName('alma');
+				for (var i = 0; i < listares.length; i++) {
+					if ((listares[i].src) === ( cartino.src )) {
+						almacen.removeChild(listares[i]);
+						alert('¡Hecho!');
+					}
+				}
+			}
+                }
+		
         }
 };
 
@@ -1460,19 +1510,4 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                 guardia_8.style.visibility = 'hidden';                
                 }
         }
-};
-
-document.querySelector('#res_most').onclick = function (){
-        var almacen = document.getElementById('almacen');
-        almacen.style.animation = 'parriba 1s forwards';
-        var desatras = document.getElementById('desatras');
-        var desalante = document.getElementById('desalante');
-        desatras.style.visibility = 'hidden';
-        desalante.style.visibility = 'hidden';
-        var resatras = document.getElementById('resatras');
-        var resalante = document.getElementById('resalante');
-        resatras.style.visibility = 'visible';
-        resalante.style.visibility = 'visible';
-        var almacver = document.getElementById('almacen_siguiente');
-        almacver.style.visibility = 'hidden';
-};   
+};  

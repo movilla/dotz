@@ -516,7 +516,10 @@
 .destino_reserva {
   position: absolute;
   right: 2%;
-  top: 50%;
+  top: 25%;
+  visibility: hidden;
+  animation: parpadeo 2s;
+  animation-iteration-count: infinite;
 }
 
 .almacen_card {
@@ -567,4 +570,12 @@
 #alm_flechas {
   visibility: hidden;
   z-index: 5;
+}
+
+.alma {
+  display: none;
+}
+
+.reserva_destino {
+  visibility: hidden;
 }

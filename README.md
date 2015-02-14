@@ -71,3 +71,7 @@ Versiones
 * Corregidos fallos de posicionamiento de los dados.
 * Mejorada la apariencia de los dados.
 * Añada precarga de imagenes para cartas de destino.
+
+0.0.10
+* Añadida opción para conservar cartas de destino.
+* Ampliada la imagen de la cara de los dados.
