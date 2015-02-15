@@ -509,7 +509,7 @@
 
 .mantener {
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 1%;
 }
 
@@ -578,4 +578,12 @@
 
 .reserva_destino {
   visibility: hidden;
+}
+
+.szeds {
+  position: fixed;
+  top: 25%;
+  left: 0.5%;
+  animation: parpadeo 5s;
+  animation-iteration-count: infinite;
 }

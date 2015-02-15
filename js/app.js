@@ -159,9 +159,10 @@ document.querySelector('#carta_destino').onclick = function () {
 					}
 				}
 			}
-
                 }
                 document.querySelector('#desatras').onclick = function moviendo(desentido) {
+			icreserva.style.visibility = 'visible';
+			marcalma.style.visibility = 'hidden';
                         var desimagen_actual = document.getElementById('carta_juego_destino');
                         var desultima = mazo_destino.length - 1;
                         var desentido = -1;
@@ -174,6 +175,7 @@ document.querySelector('#carta_destino').onclick = function () {
                         desacto.innerHTML = '<a class="num_carta">'+desviendo+'/'+desultima+'</a>'
                                 if (desviendo == (mazo_destino.length - mazo_destino.length)) {
                                         document.getElementById('desatras').style.visibility = 'hidden';
+					icreserva.style.visibility = 'hidden';
                                 }
                         document.getElementById('desalante').style.visibility = 'visible';
                         var predestino = document.getElementById('predestino');
@@ -188,8 +190,6 @@ document.querySelector('#carta_destino').onclick = function () {
 
 			var imagalmacen = document.getElementById('almacen_siguiente');
 			var cartino = document.getElementById('carta_juego_destino');
-			icreserva.style.visibility = 'visible';
-			marcalma.style.visibility = 'hidden';
 			if (imagalmacen) {
 				var listres = document.getElementsByClassName('alma');
 				for (var i = 0; i < listres.length; i++) {
@@ -203,28 +203,31 @@ document.querySelector('#carta_destino').onclick = function () {
                 document.querySelector('#reserva').onclick = function () {
                         var almacen = document.getElementById('almacen');
                         resercard = mazo_destino[desviendo];
-  			var conservar = confirm('¿Conservar esta carta?');
+  			var conservar = confirm('¿Añadir señal de carta conservada?');
                 	if (conservar == true) {
 				almacen.insertAdjacentHTML('beforeend','<img id="almacen_siguiente" class="alma" src="'+resercard+'">');
 				alert('¡Hecho!');
+			icreserva.style.visibility = 'hidden';
+			marcalma.style.visibility = 'visible';
 			}
                 }
                 document.querySelector('#res_most').onclick = function () {
                         var almacen = document.getElementById('almacen');
                         resercard = mazo_destino[desviendo];
 			var cartino = document.getElementById('carta_juego_destino');
-  			var desconse = confirm('¿Dejar de conservar esta carta?');
+  			var desconse = confirm('¿Quitar señal de carta conservada?');
                 	if (desconse == true) {
 				var listares = document.getElementsByClassName('alma');
 				for (var i = 0; i < listares.length; i++) {
 					if ((listares[i].src) === ( cartino.src )) {
 						almacen.removeChild(listares[i]);
 						alert('¡Hecho!');
+					icreserva.style.visibility = 'visible';
+					marcalma.style.visibility = 'hidden';
 					}
 				}
 			}
-                }
-		
+                }		
         }
 };
 
@@ -572,7 +575,23 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_corto[viendomas];
-                preloadant.src = juego_corto[viendomenos];              
+                preloadant.src = juego_corto[viendomenos];
+                var superzeds = document.getElementById('superzeds');
+                if ((juego_corto[viendo]) == ('style/img/es/evento/23.jpg')) {
+                       	superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
+			document.querySelector('#superzeds').onclick = function () {
+					alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+			}
+                }
+                if ((juego_corto[viendo]) == ('style/img/es/evento/42.jpg')) {
+                       	superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
+			document.querySelector('#superzeds').onclick = function () {
+					alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+			}
+                }
+		if ((juego_corto[viendo]) != ('style/img/es/evento/23.jpg')) {
+			superzeds.innerHTML = ''
+		}
         }
 
         document.querySelector('#atras').onclick = function moviendo(sentido) {
@@ -1510,4 +1529,4 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                 guardia_8.style.visibility = 'hidden';                
                 }
         }
-};  
+};
