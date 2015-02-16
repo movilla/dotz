@@ -587,3 +587,8 @@
   animation: parpadeo 5s;
   animation-iteration-count: infinite;
 }
+
+.zeds {
+  box-shadow: -0.4em 0.5em 0.2em 0px rgba(0, 0, 0, 0.75);
+  border-radius: 0.5em 0.5em 0.5em 0.5em;
+}

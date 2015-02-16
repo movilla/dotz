@@ -75,3 +75,7 @@ Versiones
 0.0.10
 * Añadida opción para conservar cartas de destino.
 * Ampliada la imagen de la cara de los dados.
+
+0.0.11
+* Mejora opción para conservar cartas de destino.
+* Añadida la ficha de unidad SuperZeds en su respectiva carta de evento.
