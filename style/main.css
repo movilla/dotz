@@ -232,7 +232,7 @@
 .sms_flechas {
   position: fixed;
   font-size: 2em;
-  left: -65%;
+  left: -70%;
   bottom: 10%;
   text-align: justify;
   overflow: hidden;
@@ -267,7 +267,7 @@
 }
 
 @keyframes palao {	
-        0%	{left: -65%;}
+        0%	{left: -70%;}
 	100%     {left: 165%;}
 }
 

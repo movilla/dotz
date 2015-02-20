@@ -583,19 +583,19 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                                         if ((juego_corto[viendo]) == ('style/img/es/evento/23.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+					                alert('Recuerda que cuando los Ravagers atacan durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
 			                        }
                                         }
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/42.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+					                alert('Recuerda que los Dread Zeds es una unidad "dura" por lo que cancelan sus daños con una tira de 4, 5 o 6. Además un ataque exitoso Gunfire con la Super Arma no les hará retroceder.')
 			                        }
                                         }
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/45.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="bufalillos"><img class="zeds" src="style/img/were_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda la unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Si en su camino se encuentra con otra unidad Zeds le provocará un daño a esa unidad.')
+					                alert('La unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Además cuando se cruce con otra unidad Zeds le causará a esta un daño.')
 			                        }
                                         }
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/43.jpg')) {
@@ -607,7 +607,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que esta unidad salta dos espacios. Si el salto acaba en una Horda Zeds o unidas Zeds en el tunel en un espacio que no sea catacumbas, cancela el salto y mueve normalmente. No se verán afectados por los modificadores de Terreno cuando saltan directamente en combate. Cuando salga la carta Brains! saltarán al mismo número del camino exterior de la izquierda si la carta es impar y al de la derecha si es par.')
+					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
@@ -669,19 +669,19 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                                         if ((juego_corto[viendo]) == ('style/img/es/evento/23.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+					                alert('Recuerda que cuando los Ravagers atacan durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
 			                        }
                                         }
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/42.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+					                alert('Recuerda que los Dread Zeds es una unidad "dura" por lo que cancelan sus daños con una tira de 4, 5 o 6. Además un ataque exitoso Gunfire con la Super Arma no les hará retroceder.')
 			                        }
                                         }
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/45.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="bufalillos"><img class="zeds" src="style/img/were_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda la unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Si en su camino se encuentra con otra unidad Zeds le provocará un daño a esa unidad.')
+					                alert('La unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Además cuando se cruce con otra unidad Zeds le causará a esta un daño.')
 			                        }
                                         }
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/43.jpg')) {
@@ -693,7 +693,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que esta unidad salta dos espacios. Si el salto acaba en una Horda Zeds o unidas Zeds en el tunel en un espacio que no sea catacumbas, cancela el salto y mueve normalmente. No se verán afectados por los modificadores de Terreno cuando saltan directamente en combate. Cuando salga la carta Brains! saltarán al mismo número del camino exterior de la izquierda si la carta es impar y al de la derecha si es par.')
+					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
@@ -1053,19 +1053,19 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
                                         if ((juego_corto[viendo]) == ('style/img/es/evento/23.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+					                alert('Recuerda que cuando los Ravagers atacan durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
 			                        }
                                         }
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/42.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+					                alert('Recuerda que los Dread Zeds es una unidad "dura" por lo que cancelan sus daños con una tira de 4, 5 o 6. Además un ataque exitoso Gunfire con la Super Arma no les hará retroceder.')
 			                        }
                                         }
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/45.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="bufalillos"><img class="zeds" src="style/img/were_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda la unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Si en su camino se encuentra con otra unidad Zeds le provocará un daño a esa unidad.')
+					                alert('La unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Además cuando se cruce con otra unidad Zeds le causará a esta un daño.')
 			                        }
                                         }
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/43.jpg')) {
@@ -1077,7 +1077,7 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que esta unidad salta dos espacios. Si el salto acaba en una Horda Zeds o unidas Zeds en el tunel en un espacio que no sea catacumbas, cancela el salto y mueve normalmente. No se verán afectados por los modificadores de Terreno cuando saltan directamente en combate. Cuando salga la carta Brains! saltarán al mismo número del camino exterior de la izquierda si la carta es impar y al de la derecha si es par.')
+					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
@@ -1139,19 +1139,19 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
                                         if ((juego_corto[viendo]) == ('style/img/es/evento/23.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+					                alert('Recuerda que cuando los Ravagers atacan durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
 			                        }
                                         }
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/42.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+					                alert('Recuerda que los Dread Zeds es una unidad "dura" por lo que cancelan sus daños con una tira de 4, 5 o 6. Además un ataque exitoso Gunfire con la Super Arma no les hará retroceder.')
 			                        }
                                         }
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/45.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="bufalillos"><img class="zeds" src="style/img/were_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda la unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Si en su camino se encuentra con otra unidad Zeds le provocará un daño a esa unidad.')
+					                alert('La unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Además cuando se cruce con otra unidad Zeds le causará a esta un daño.')
 			                        }
                                         }
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/43.jpg')) {
@@ -1163,7 +1163,7 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
                                         else if ((juego_normal[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que esta unidad salta dos espacios. Si el salto acaba en una Horda Zeds o unidas Zeds en el tunel en un espacio que no sea catacumbas, cancela el salto y mueve normalmente. No se verán afectados por los modificadores de Terreno cuando saltan directamente en combate. Cuando salga la carta Brains! saltarán al mismo número del camino exterior de la izquierda si la carta es impar y al de la derecha si es par.')
+					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
@@ -1576,19 +1576,19 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                                         if ((juego_campana[viendo]) == ('style/img/es/evento/23.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+					                alert('Recuerda que cuando los Ravagers atacan durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
 			                        }
                                         }
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/42.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+					                alert('Recuerda que los Dread Zeds es una unidad "dura" por lo que cancelan sus daños con una tira de 4, 5 o 6. Además un ataque exitoso Gunfire con la Super Arma no les hará retroceder.')
 			                        }
                                         }
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/45.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="bufalillos"><img class="zeds" src="style/img/were_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda la unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Si en su camino se encuentra con otra unidad Zeds le provocará un daño a esa unidad.')
+					                alert('La unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Además cuando se cruce con otra unidad Zeds le causará a esta un daño.')
 			                        }
                                         }
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/43.jpg')) {
@@ -1600,7 +1600,7 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que esta unidad salta dos espacios. Si el salto acaba en una Horda Zeds o unidas Zeds en el tunel en un espacio que no sea catacumbas, cancela el salto y mueve normalmente. No se verán afectados por los modificadores de Terreno cuando saltan directamente en combate. Cuando salga la carta Brains! saltarán al mismo número del camino exterior de la izquierda si la carta es impar y al de la derecha si es par.')
+					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
@@ -1662,19 +1662,19 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                                         if ((juego_campana[viendo]) == ('style/img/es/evento/23.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="23"><img class="zeds" src="style/img/ravagers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que cuando los Ravagers ataquen durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
+					                alert('Recuerda que cuando los Ravagers atacan durante la carta de Evento "Brains!", reciben un 1> en todos sus ataques.')
 			                        }
                                         }
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/42.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="42"><img class="zeds" src="style/img/dread_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda los Dread Zeds son duros y cancelan daños con una tira de 4, 5 o 6. Asimismo un ataque exitoso Gunfire con la Super Arma no les obligará a retroceder.')
+					                alert('Recuerda que los Dread Zeds es una unidad "dura" por lo que cancelan sus daños con una tira de 4, 5 o 6. Además un ataque exitoso Gunfire con la Super Arma no les hará retroceder.')
 			                        }
                                         }
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/45.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="bufalillos"><img class="zeds" src="style/img/were_zeds.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda la unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Si en su camino se encuentra con otra unidad Zeds le provocará un daño a esa unidad.')
+					                alert('La unidad Were-Zeds mueve dos espacios e incrementa el nivel de infección en +2 en cada combate cuerpo a cuerpo. Además cuando se cruce con otra unidad Zeds le causará a esta un daño.')
 			                        }
                                         }
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/43.jpg')) {
@@ -1686,7 +1686,7 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                                         else if ((juego_campana[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Recuerda que esta unidad salta dos espacios. Si el salto acaba en una Horda Zeds o unidas Zeds en el tunel en un espacio que no sea catacumbas, cancela el salto y mueve normalmente. No se verán afectados por los modificadores de Terreno cuando saltan directamente en combate. Cuando salga la carta Brains! saltarán al mismo número del camino exterior de la izquierda si la carta es impar y al de la derecha si es par.')
+					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
