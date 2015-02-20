@@ -81,4 +81,4 @@ Versiones
 * Añadida la ficha de unidad SuperZeds en su respectiva carta de evento.
 
 0.0.12
-* Correción de fallos menos de posicionamiento y cambio de icono de reserva mazo destino.
+* Corrección de fallos menos de posicionamiento y cambio de icono de reserva mazo destino.
