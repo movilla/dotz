@@ -1,7 +1,7 @@
 {
   "name": "Ayuda DOTZ",
   "description": "Aplicación complementaria para el juego de mesa Dawn of the Zeds (2ºEd)",
-  "version": "0.0.12",
+  "version": "0.1.0",
   "launch_path": "/index.html",
   "icons": {
     "60": "/style/img/icono_60.png",

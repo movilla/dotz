@@ -35,10 +35,6 @@
   z-index: 16;
 }
 
-.percarga {
-  display: none;
-}
-
 .txt_intro {
   font-size: 3em;
   text-align: center;
@@ -112,6 +108,16 @@
   max-height: 85%;
   box-shadow: -12px 10px 5px 0px rgba(0,0,0,0.75);
   z-index: 1;
+}
+
+.pre_siguiente {
+  position: fixed; 
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4em;
+  max-width: 85%;
+  max-height: 85%;
+  z-index: -7;
 }
 
 .empezar {

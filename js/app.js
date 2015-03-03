@@ -115,7 +115,7 @@ document.querySelector('#carta_destino').onclick = function () {
                 destino.setAttribute('data-destino', 'viejo');
                 document.getElementById('desatras').style.visibility = 'hidden';
                 var predestino = document.getElementById('predestino');
-                predestino.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/destino/'+cdes_1+'.jpg">';
+                predestino.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/destino/'+cdes_1+'.jpg">';
 		var icreserva = document.getElementById('reserva_dest');
 		var marcalma = document.getElementById('dest_res');
 
@@ -139,8 +139,8 @@ document.querySelector('#carta_destino').onclick = function () {
                         var predestino = document.getElementById('predestino');
                         viendodesmas = desauxiliar +1;
                         viendodesmenos = desauxiliar -1;
-                        predestino.innerHTML = '<img id="cartades_siguiente" class="" src="">';
-                        predestino.innerHTML += '<img id="cartades_anterior" class="" src="">';
+                        predestino.innerHTML = '<img id="cartades_siguiente" class="pre_siguiente" src="">';
+                        predestino.innerHTML += '<img id="cartades_anterior" class="pre_siguiente" src="">';
                         var predesload = document.getElementById('cartades_siguiente');
                         var predesloadant = document.getElementById('cartades_anterior');
                         predesload.src = mazo_destino[viendodesmas];
@@ -182,8 +182,8 @@ document.querySelector('#carta_destino').onclick = function () {
                         var predestino = document.getElementById('predestino');
                         viendodesmas = desauxiliar +1;
                         viendodesmenos = desauxiliar -1;
-                        predestino.innerHTML = '<img id="cartades_siguiente" class="" src="">';
-                        predestino.innerHTML += '<img id="cartades_anterior" class="" src="">';
+                        predestino.innerHTML = '<img id="cartades_siguiente" class="pre_siguiente" src="">';
+                        predestino.innerHTML += '<img id="cartades_anterior" class="pre_siguiente" src="">';
                         var predesload = document.getElementById('cartades_siguiente');
                         var predesloadant = document.getElementById('cartades_anterior');
                         predesload.src = mazo_destino[viendodesmas];
@@ -487,7 +487,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
         smsflechas.style.animation = 'palao 15s forwards';
 
         var prepricarga = document.getElementById('preload');
-        prepricarga.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/evento/'+azul_1d+'.jpg">';
+        prepricarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/evento/'+azul_1d+'.jpg">';
         
         
         var viendo = 0;
@@ -571,8 +571,8 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
                 viendomenos = auxiliar -1;
-                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
-                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                precarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="pre_siguiente" src="">';
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_corto[viendomas];
@@ -607,7 +607,7 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                                         else if ((juego_corto[viendo]) == ('style/img/es/evento/44.jpg')) {
                        	                        superzeds.innerHTML = '<a class="szeds" id="44"><img class="zeds" src="style/img/leapers.png"></a>'
 			                        document.querySelector('#superzeds').onclick = function () {
-					                alert('Esta unidad salta dos espacios. Si el salto acaba en un casilla a la que no puede acceder, este cancela y mueve normalmente. Los modificadores de Terreno no le afectan cuando saltan a una casilla. Durante la carta Brains! si el número de esta es par saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
+					                alert('Saltan dos espacios. Si no pueden acceder a la segunda casilla el salto se cancela y mueven normalmente. Al saltar no se les aplica las defensas de Terreno. Con la carta Brains! si el número de esta es par, saltarán al mismo número del camino exterior de la izquierda y al de la derecha si es par.')
 			                        }
                                         }
 		                        else {
@@ -657,8 +657,8 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
                 viendomenos = auxiliar -1;
-                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
-                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                precarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="pre_siguiente" src="">';
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_corto[viendomas];
@@ -957,7 +957,7 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
         smsflechas.style.animation = 'palao 15s forwards';
 
         var prepricarga = document.getElementById('preload');
-        prepricarga.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/evento/'+azul_1d+'.jpg">';
+        prepricarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/evento/'+azul_1d+'.jpg">';
         
         
         var viendo = 0;
@@ -1041,8 +1041,8 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
                 viendomenos = auxiliar -1;
-                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
-                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                precarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="pre_siguiente" src="">';
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_normal[viendomas];
@@ -1127,8 +1127,8 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
                 viendomenos = auxiliar -1;
-                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
-                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                precarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="pre_siguiente" src="">';
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_normal[viendomas];
@@ -1480,7 +1480,7 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
         smsflechas.style.animation = 'palao 15s forwards';
 
         var prepricarga = document.getElementById('preload');
-        prepricarga.innerHTML = '<img id="carta_siguiente" class="" src="style/img/es/evento/'+azul_1d+'.jpg">';
+        prepricarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/evento/'+azul_1d+'.jpg">';
         
         
         var viendo = 0;
@@ -1564,8 +1564,8 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
                 viendomenos = auxiliar -1;
-                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
-                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                precarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="pre_siguiente" src="">';
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_campana[viendomas];
@@ -1650,8 +1650,8 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                 var precarga = document.getElementById('preload');
                 viendomas = auxiliar +1;
                 viendomenos = auxiliar -1;
-                precarga.innerHTML = '<img id="carta_siguiente" class="" src="">';
-                precarga.innerHTML += '<img id="carta_anterior" class="" src="">';
+                precarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="">';
+                precarga.innerHTML += '<img id="carta_anterior" class="pre_siguiente" src="">';
                 var preload = document.getElementById('carta_siguiente');
                 var preloadant = document.getElementById('carta_anterior');
                 preload.src = juego_campana[viendomas];
