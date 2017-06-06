@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget xmlns     = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "https://github.com/movilla/dotz"
+        version   = "0.0.1">
+
+    <name>Ayuda DOTZ</name>
+
+    <description>
+        Aplicación auxiliar del juego de mesa Dawn of the ZEDS, 2ª Ed.
+    </description>
+
+    <author href="https://github.com/movilla" email="moviglez@gmail.com">
+        Movilla
+    </author>
+
+    <preference name="permissions"                value="none"/>
+    <preference name="orientation"                value="portrait" />  
+
+    <icon src="icon.png" />
+    <icon src="res/icon/android/icon-36-ldpi.png"   gap:platform="android"    gap:qualifier="ldpi" />
+    <icon src="res/icon/android/icon-48-mdpi.png"   gap:platform="android"    gap:qualifier="mdpi" />
+    <icon src="res/icon/android/icon-72-hdpi.png"   gap:platform="android"    gap:qualifier="hdpi" />
+    <icon src="res/icon/android/icon-96-xhdpi.png"  gap:platform="android"    gap:qualifier="xhdpi" />
+    <icon src="res/icon/android/xxhdpi.png"  gap:platform="android"    gap:qualifier="xxhdpi" />
+    <icon src="res/icon/android/fr-xxhdpi.png"  gap:platform="android"    gap:qualifier="fr-xxhdpi" />
+
+</widget>
