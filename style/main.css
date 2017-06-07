@@ -10,7 +10,7 @@
 
 #fondo {
   position:fixed;
-  background: url('./img/dotz_maptim_sidea.jpg') no-repeat center center fixed;
+  background: url('./img/dotz_maptim_sidea.jpg') no-repeat center center;
   background-size: cover;
   width:100%;
   height:100%;
@@ -223,7 +223,7 @@
 }
 
 .paleta_destino {
-  background: url('./img/dotz_mapfarmingdale.jpg') no-repeat center center fixed !important;
+  background: url('./img/dotz_mapfarmingdale.jpg') no-repeat center center;
   background-size: cover;
   position: fixed;
   right: 0%;
@@ -233,6 +233,7 @@
   height: 100%;
   width: 100%;
 }
+
 
 .sms_flechas {
   position: fixed;
@@ -293,7 +294,6 @@
   padding: 0;
   z-index: 5;
   height: 2em;
-  width: 2em;
   opacity: 0.7;
 }
 
@@ -469,7 +469,7 @@
 }
 
 .fondados {
-  background: url('img/pic1705546.jpg') no-repeat center center fixed;
+  background: url('img/pic1705546.jpg') no-repeat center center;
   background-size: cover;
   position: fixed;
   right: 0%;

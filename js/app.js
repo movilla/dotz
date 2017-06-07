@@ -28,12 +28,13 @@ document.querySelector('#carta_destino').onclick = function () {
         var desacto = document.getElementById('des_acto'); 
         var sino = cartadestino.getAttribute('data-arriba');
         var nuevodestino = destino.getAttribute('data-destino');
+        var paratrass = des_delante.getAttribute('data-paraatras');
         if (sino == 'si') {
                 destino.style.animation = 'parriba 1s forwards';
                 cartadestino.style.animation = 'girapabajo 1s forwards';
                 cartadestino.setAttribute('data-arriba', 'no')
                 des_delante.style.visibility ='visible';
-                des_atras.style.visibility ='visible';
+                if (paratrass === 'no') {des_atras.style.visibility ='visible';}
                 acto.style.visibility ='hidden';
                 desacto.style.visibility ='visible';
         }
@@ -122,6 +123,7 @@ document.querySelector('#carta_destino').onclick = function () {
 
                 var desviendo = 0;
                 document.querySelector('#desalante').onclick = function moviendo(desentido) {
+                        document.getElementById('desalante').setAttribute('data-paraatras', 'no')
                         var desimagen_actual = document.getElementById('carta_juego_destino');
                         var desultima = mazo_destino.length - 1;
                         var desentido = 1;
