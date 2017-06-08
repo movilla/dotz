@@ -98,6 +98,34 @@
   opacity: 0.7;
 }
 
+.zoom:after {
+  position: fixed;
+  bottom: 8%;
+  display: block;
+  content: url(./icons/zoom.png);
+  max-width: 100%;
+  color: white !important;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  right: 50%;
+}
+
+.zoomoff:after {
+  position: fixed;
+  bottom: 8%;
+  display: block;
+  content: url(./icons/zoomoff.png);
+  max-width: 100%;
+  color: white !important;
+  padding: 0;
+  z-index: 1;
+  height: 2em;
+  width: 2em;
+  right: 50%;
+}
+
 .carta {
   display: block;
   margin-left: auto;
@@ -598,4 +626,14 @@
 .zeds {
   box-shadow: -0.4em 0.5em 0.2em 0px rgba(0, 0, 0, 0.75);
   border-radius: 0.5em 0.5em 0.5em 0.5em;
+}
+
+@keyframes zoomon {	
+        0%	{width: 85%; max-width: 85%;}
+	100%     {width: 100%; max-width: 100%;}
+}
+
+@keyframes zoomoff {	
+        0%	{width: 100%; max-width: 100%;}
+	100%     {width: 85%; max-width: 85%;}
 }

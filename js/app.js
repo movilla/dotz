@@ -1743,3 +1743,19 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
                 }
         }
 };
+
+document.querySelector('#palzoom').onclick = function () {
+  
+        document.getElementById('carta_en_juego').style.animation = 'zoomon 1s forwards';
+        document.getElementById('palzoom').style.visibility = 'hidden';
+        document.getElementById('palzoomoff').style.visibility = 'inherit';
+
+}
+
+document.querySelector('#palzoomoff').onclick = function () {
+  
+        document.getElementById('carta_en_juego').style.animation = 'zoomoff 1s forwards';
+        document.getElementById('palzoom').style.visibility = 'inherit';
+        document.getElementById('palzoomoff').style.visibility = 'hidden';
+
+}
