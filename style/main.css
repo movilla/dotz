@@ -126,34 +126,6 @@
   right: 50%;
 }
 
-.deszoom:after {
-  position: fixed;
-  bottom: 8%;
-  display: block;
-  content: url(./icons/zoom.png);
-  max-width: 100%;
-  color: white !important;
-  padding: 0;
-  z-index: 1;
-  height: 2em;
-  width: 2em;
-  right: 50%;
-}
-
-.deszoomoff:after {
-  position: fixed;
-  bottom: 8%;
-  display: block;
-  content: url(./icons/zoomoff.png);
-  max-width: 100%;
-  color: white !important;
-  padding: 0;
-  z-index: 1;
-  height: 2em;
-  width: 2em;
-  right: 50%;
-}
-
 .carta {
   display: block;
   margin-left: auto;
