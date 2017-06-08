@@ -389,33 +389,33 @@
 }
 
 .cara1_uno {
-  -moz-transform: translateZ(1.64rem);
-  transform: translateZ(1.64rem);
+  -moz-transform: translateZ(2.00rem);
+  transform: translateZ(2.00rem);
 }
 
 .cara2_uno {
-  -moz-transform: rotateY(90deg) translateZ(1.64rem);
-  transform: rotateY(90deg) translateZ(1.64rem);
+  -moz-transform: rotateY(90deg) translateZ(2.00rem);
+  transform: rotateY(90deg) translateZ(2.00rem);
 }
 
 .cara3_uno {
-  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(1.64rem);
-  transform: rotateY(90deg) rotateX(90deg) translateZ(1.64rem);
+  -moz-transform: rotateY(90deg) rotateX(90deg) translateZ(2.00rem);
+  transform: rotateY(90deg) rotateX(90deg) translateZ(2.00rem);
 }
 
 .cara4_uno {
-  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(1.64rem);
-  transform: rotateY(180deg) rotateZ(90deg) translateZ(1.64rem);
+  -moz-transform: rotateY(180deg) rotateZ(90deg) translateZ(2.00rem);
+  transform: rotateY(180deg) rotateZ(90deg) translateZ(2.00rem);
 }
 
 .cara5_uno {
-  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(1.64rem);
-  transform: rotateY(-90deg) rotateZ(90deg) translateZ(1.64rem);
+  -moz-transform: rotateY(-90deg) rotateZ(90deg) translateZ(2.00rem);
+  transform: rotateY(-90deg) rotateZ(90deg) translateZ(2.00rem);
 }
 
 .cara6_uno {
-  -moz-transform: rotateX(-90deg) translateZ(1.64rem);
-  transform: rotateX(-90deg) translateZ(1.64rem);
+  -moz-transform: rotateX(-90deg) translateZ(2.00rem);
+  transform: rotateX(-90deg) translateZ(2.00rem);
 }
 
 .c_uno:before {
