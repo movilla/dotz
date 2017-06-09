@@ -30,6 +30,8 @@ document.querySelector('#carta_destino').onclick = function () {
         var nuevodestino = destino.getAttribute('data-destino');
         var paratrass = des_delante.getAttribute('data-paraatras');
         if (sino == 'si') {
+                document.getElementById('despalzoomoff').style.visibility = 'visible';
+                document.getElementById('despalzoom').style.visibility = 'visible';
                 destino.style.animation = 'parriba 1s forwards';
                 cartadestino.style.animation = 'girapabajo 1s forwards';
                 cartadestino.setAttribute('data-arriba', 'no')
@@ -39,6 +41,8 @@ document.querySelector('#carta_destino').onclick = function () {
                 desacto.style.visibility ='visible';
         }
         else {
+                document.getElementById('despalzoomoff').style.visibility = 'hidden';
+                document.getElementById('despalzoom').style.visibility = 'hidden';
                 destino.style.animation = 'pabajo 1s forwards';
                 cartadestino.style.animation = 'giraparriba 1s forwards';
                 cartadestino.setAttribute('data-arriba', 'si')
@@ -487,6 +491,9 @@ document.querySelector( "#mazo_corto" ).onclick = function () {
 
         var smsflechas = document.getElementById('alerta_flechas');
         smsflechas.style.animation = 'palao 15s forwards';
+
+        document.getElementById('despalzoomoff').style.visibility = 'hidden';
+        document.getElementById('despalzoom').style.visibility = 'hidden';
 
         var prepricarga = document.getElementById('preload');
         prepricarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/evento/'+azul_1d+'.jpg">';
@@ -957,6 +964,9 @@ document.querySelector( "#mazo_normal" ).onclick = function () {
 
         var smsflechas = document.getElementById('alerta_flechas');
         smsflechas.style.animation = 'palao 15s forwards';
+
+        document.getElementById('despalzoomoff').style.visibility = 'hidden';
+        document.getElementById('despalzoom').style.visibility = 'hidden';
 
         var prepricarga = document.getElementById('preload');
         prepricarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/evento/'+azul_1d+'.jpg">';
@@ -1481,6 +1491,9 @@ document.querySelector( "#mazo_campana" ).onclick = function () {
         var smsflechas = document.getElementById('alerta_flechas');
         smsflechas.style.animation = 'palao 15s forwards';
 
+        document.getElementById('despalzoomoff').style.visibility = 'hidden';
+        document.getElementById('despalzoom').style.visibility = 'hidden';
+
         var prepricarga = document.getElementById('preload');
         prepricarga.innerHTML = '<img id="carta_siguiente" class="pre_siguiente" src="style/img/es/evento/'+azul_1d+'.jpg">';
         
@@ -1757,5 +1770,21 @@ document.querySelector('#palzoomoff').onclick = function () {
         document.getElementById('carta_en_juego').style.animation = 'zoomoff 1s forwards';
         document.getElementById('palzoom').style.visibility = 'inherit';
         document.getElementById('palzoomoff').style.visibility = 'hidden';
+
+}
+
+document.querySelector('#despalzoom').onclick = function () {
+  
+        document.getElementById('carta_juego_destino').style.animation = 'zoomon 1s forwards';
+        document.getElementById('despalzoom').style.visibility = 'hidden';
+        document.getElementById('despalzoomoff').style.visibility = 'visible';
+
+}
+
+document.querySelector('#despalzoomoff').onclick = function () {
+  
+        document.getElementById('carta_juego_destino').style.animation = 'zoomoff 1s forwards';
+        document.getElementById('despalzoom').style.visibility = 'visible';
+        document.getElementById('despalzoomoff').style.visibility = 'hidden';
 
 }
